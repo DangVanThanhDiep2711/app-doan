@@ -146,7 +146,7 @@ nav ul li > .sub-menu {
     font-weight: 500;   
     text-decoration: none;
     transition: ease 0.40s;
-    width: 100px;
+    width: 150px;   
 }
 .sub-menu a{
     background-color: white;
@@ -660,7 +660,7 @@ nav ul li a{
 }
 
 
-.contact-form form input,form textarea{
+.contact-form form input{
     width: 100%;
     padding: 17px;
     border: none;
@@ -1297,4 +1297,9 @@ input,
 button {
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
+}
+.form1{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
 }

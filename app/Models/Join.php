@@ -28,4 +28,8 @@ class Join extends Model
     {
         return $this-> belongsTo(Mountain::class);
     }
+    public function memberjoin(): BelongsTo
+    {
+        return $this-> belongsTo(MemberJoin::class);
+    }
 }

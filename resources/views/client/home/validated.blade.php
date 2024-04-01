@@ -16,9 +16,9 @@
                 <th>ID</th>
                 <th>Mountain</th>
                 <th>Name Tour</th>
-                <th>DateTime</th>
                 <th>Infomation</th>
                 <th>Quantity</th>
+                <th>DateTime</th>
                 <th>Status</th>         
             </tr>
         </thead>
@@ -30,9 +30,9 @@
                 <td>{{$loop->iteration}}</td>
                 <td>{{$memberjoin->join->mountain->name}}</td>
                 <td>{{$memberjoin->join->name}}</td>
-                <td>{{$memberjoin->date}}</td>
                 <td>{{$memberjoin->join->infomation}}</td>
                 <td>{{$memberjoin->join->quantity}}</td> 
+                <td>{{$memberjoin->date}}</td>
                 @if ($memberjoin->status == 1)
                 <td><span class="right badge badge-{{$memberjoin->status == 1 ?'dark':'success'}}">Waiting</td>
                 @endif
@@ -43,10 +43,8 @@
                 <td><span class="right badge badge-{{$memberjoin->status == 3 ?'dark':'success'}}">Rejected</td>
                 @endif
                 @endif  
-                
             </tr>
-        </tbody>
-       
+        </tbody> 
         @endforeach
         <tfoot>
             <tr>
@@ -60,7 +58,7 @@
             </tr>
         </tfoot>
     </form>
-    </table>        
+    </table>   
 </section>
 @endif
 

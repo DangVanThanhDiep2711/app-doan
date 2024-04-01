@@ -10,15 +10,33 @@ use App\Models\MemberJoin;
 use App\Models\Mountain;
 use DB;
 class TourController extends Controller
-{
+{   
+    
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        $mountain = Mountain::get();
+        return view('client.home.createtour',[
+            'mountains' => $mountain,
+        ]);
+    }
     public function show()
     {
-        $join = Join::get();
-        $memberjoin = MemberJoin::get();
+        $join = Join::get('quantity');
+        $memberjoin = MemberJoin::select('join_id',DB::raw('count(*) as total'))->groupBy('join_id')->pluck('total','join_id');    
+        $total=$memberjoin->get(1);           
         return view("client.home.tour",[
             'joins' =>$join,
-            'memberjoins'=>$memberjoin
+            'memberjoins'=>$memberjoin,
+            'totals'=>$total,
         ]);
+    }
+    public function isFull(){
+        $join = Join::get('quantity');
+        $memberjoin = MemberJoin::get();
+        return $this->$memberjoin->count() >= $this->$join;
     }
     public function showvalidate()
     {

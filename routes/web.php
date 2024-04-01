@@ -54,6 +54,7 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::post('store', 'store')->name('store');
     });
     Route::prefix('tour')->name('tour.')->controller(TourController::class)->group(function () {
+        Route::get('create', 'create')->name('create');
         Route::get('show', 'show')->name('show');
         Route::get('showvalidate', 'showvalidate')->name('showvalidate');
         Route::get('showrejected', 'showrejected')->name('showrejected');
@@ -99,7 +100,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     
             Route::get('destroy/{id}', 'destroy')->name('destroy');
         });
-        Route::prefix('join')->name('join.')->middleware('check_login')->controller(JoinController::class)->group(function () {
+        Route::prefix('join')->name('join.')->controller(JoinController::class)->group(function () {
             Route::get('index', 'index')->middleware('check_login')->name('index');
     
             Route::get('create', 'create')->middleware('check_login')->name('create');

@@ -6,11 +6,12 @@
 
 <div class="image-container">
     <img src="{{asset('blog/files/nui4.jpg')}}" class="img1">
-    <div class="overlay">Availabled Tour</div>
+    <div class="overlay">Avabledila Tour</div>
 </div>
 
 @if (Auth::check())
 <section class="container">
+    
     <table name="created" border="1px" class="tb1">
         <thead class="head1">
             <tr>
@@ -32,7 +33,6 @@
                 <td>{{$join->infomation}}</td>
                 <td>{{$join->quantity}}</td>
                 <td>{{date('d/m/Y - H:m:i', strtotime($join->date))}}</td>  
-
                 <form action="{{route('admin.memberjoin.store')}}" method="post">
                     @csrf
                 <div id="hiddenElement" style="visibility: hidden;">
@@ -46,8 +46,14 @@
                 <select class="form-control" name="status">
                 <option value="1" selected >validated</option>
                 </select>
-                </div>        
+                </div>  
+                   
+                @if ($totals>=$join->quantity)
+                <td><input type="button" value="Full" class="btn1"></td>
+                @else
                 <td><input type="submit" value="Register" class="btn1"></td>
+                @endif   
+                
                 </form>
             </tr>
         </tbody>

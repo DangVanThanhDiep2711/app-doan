@@ -37,12 +37,17 @@
                     </ul>
                 
                 </li>
+                @if (Auth::check())
+                    
+               
                 <li><a href="#locations">Tours</a>
                     <ul class="sub-menu">
+                        <li><a href="{{route('client.tour.create')}}">Create Tour</a></li>
                         <li><a href="{{route('client.tour.show')}}">Availabled Tours</a></li>
                         <li><a href="{{route('client.tour.showvalidate')}}">Validated Tours</a></li>
                         <li><a href="{{route('client.tour.showrejected')}}">Rejected Tours</a></li>                
                     </ul></li>    
+                    @endif
                 <li><a href="{{route('client.contactus.show')}}">Contact Us</a></li>
                 <li><a href="#">Learn</a>
                     <ul class="sub-menu">
@@ -51,7 +56,14 @@
                     </ul>
                 </li>
                 @if (Auth::check())
-                <li><a href="{{route('logout')}}">Sign out</a></li>    
+                <li>
+                    
+                    <a href="#">{{Auth::user()->fullname}}</a>
+                    <ul class="sub-menu">
+                        <li><a href="{{route('client.tour.create')}}">Infomation</a></li>
+                        <li><a href="{{route('logout')}}">Sign out</a></li>                
+                    </ul>
+                </li>    
                 @else
                 <li><a href="{{route('client.sign-in.login')}}">Sign in</a></li>                    
                 @endif               

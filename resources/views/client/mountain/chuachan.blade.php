@@ -1,12 +1,12 @@
 @extends('client.master')
-@section('title' ,'Bà Đen')
+@section('title' ,'Chứa Chan')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/nui-chua-chan.png')}}" class="img1">
     <div class="overlay">Mountain Chứa Chan</div>
 </div>
 <div class="introducing">
-<h1>Conquer Chứa Chan Mountain</h1>
+<h2>Conquer Chứa Chan Mountain</h2>
 <p><b>Chua Chan Mountain is known as the second highest mountain in the Southeast region with many steep cliffs, diverse ecosystems... Because it is located not far from Saigon, this place is often loved by many young people. and choose to explore.</b></p><br>
  <p>About 100 km from Saigon, along Highway 1A towards Dong Nai, Chua Chan Mountain also has many other names such as Gia Ray Mountain or Gia Lao Mountain in Xuan Loc district, Dong Nai province. This is the second highest mountain in the South (after Ba Den Mountain - Tay Ninh) with an altitude of 837 m above sea level. Chua Chan Mountain has a majestic landscape and is considered the headland of Dong Nai province, the origin of many streams (Gia Ui stream flows to the east, Gia Mien stream flows to the west, Gia Lieu stream flows to the south and Gia Lao stream flowing north) with fresh, cool water all year round. In the rock cavities, there are water veins that extrude and stagnate into small lakes, which local people call Fairy wells.</p>
  <img class="img6" src="{{asset('blog/files/chuachan1.jpg')}}" alt="núi chứa chan">

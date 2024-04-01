@@ -1,12 +1,12 @@
 @extends('client.master')
-@section('title' ,'Héngshān')
+@section('title' ,'Dōngshān')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
     <div class="overlay">Mountain Dōngshān</div>
 </div>
 <div class="introducing">
-<h1>Conquer Héngshān Mountain</h1>
+<h2>Conquer Héngshān Mountain</h2>
 <p>Songshan (simplified Chinese: 嵩山; pinyin: Sōngshān), is one of the five sacred mountains of China, located in Dengfeng, Zhengzhou, Henan, on the banks of the Yellow River. On February 13, 2004, it was recognized by UNESCO as a World Geopark.</p>
 <img class="img6" src="{{asset('blog/files/tungson.jpg')}}" alt="núiTung Sơn">
 <h3 class="mountaintitle">Geography</h3>

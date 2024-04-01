@@ -1,12 +1,12 @@
 @extends('client.master')
-@section('title' ,'Bà Đen')
+@section('title' ,'Hán shān')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
     <div class="overlay">Mountain Hán shān</div>
 </div>
 <div class="introducing">
-<h1>Conquer Hán shān Mountain</h1>
+<h2>Conquer Hán shān Mountain</h2>
 <p>Located in the Nanyue area of ​​Wuyue, 50 km from the center of Hengyang city, Hunan, this is one of the five great mountains of China. Hanh Son Mountain is made up of granite, steep cliffs, with strange shapes, including 72 large and small peaks. Nam Nhac is also a famous area of ​​Taoism and Buddhism. On the mountain there are about 200 different pagodas, temples, and shrines. Nam Nhac Pagoda - the oldest complex in Jiangnan region with an area of ​​9,800 m² was built to simulate the Beijing ancient palace, surrounded by walls surrounded by red walls and winding corners. Hengshan Mountain is world-famous, fully converging the characteristics of four famous Chinese landscapes: the height of Chuc Dung peak, the beauty of Tang Kinh Palace, the depth of Phuong Quang Pagoda and the mysterious beauty of Phuong Quang Pagoda. Thuy Han cave. On the mountain there are also other pagodas such as Trung Liet pagoda, Ban Son communal house, Ma Kinh tower, Nam Thien gate, Quang Te pagoda, Hoa Sen peak, Chuc Thanh pagoda and many other famous places.</p>
 <h3 class="mountaintitle">Describe</h3>
 <p>The largest temple of Hengshan is the Nanyue Temple, which covers an area of ​​100,000 square meters and it is the largest of the ancient temples and houses in Hunan province. The temple has nine courtyards and the main hall is 22 meters high, supported by 72 stone pillars, which symbolize 72 mountain peaks. The temples, red and yellow glass, are linked to many other buildings and represent a large palace complex. <br> <br>

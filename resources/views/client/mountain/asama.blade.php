@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Asama</div>
 </div>
 <div class="introducing">
-<h1>Conquer Asama Mountain</h1>
+<h2>Conquer Asama Mountain</h2>
 <p>Mount Asama (浅間山 Asama-yama?) is an active complex volcano in the central Japanese island of Honshū. This is the most active volcano on the island of Honshū. The Japan Meteorological Agency classifies Mount Asama as grade A. The mountain's peak is 2,568 meters (8,425 ft) above sea level, on the border between Gunma and Nagano prefectures. Asama is listed as one of the 100 famous mountains in Japan (Japan's list of mountains). A class of cruisers of the Imperial Japanese Navy named after the mountain.</p>
 
 <div><img class="img6" src="{{asset('blog/files/Mount_Asama.JPG')}}" alt="Asama"></div>

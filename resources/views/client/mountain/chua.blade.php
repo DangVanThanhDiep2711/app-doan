@@ -1,12 +1,12 @@
 @extends('client.master')
-@section('title' ,'Bà Đen')
+@section('title' ,'Chúa')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
     <div class="overlay">Mountain Chúa</div>
 </div>
 <div class="introducing">
-<h1>Conquer Chúa Mountain</h1>
+<h2>Conquer Chúa Mountain</h2>
 <p>Nui Chua National Park is a national park in Ninh Hai district, Ninh Thuan province, Vietnam established in 2003 under Decision No. 134/2003/QD-TTg of the Prime Minister of the Socialist Republic of Vietnam. Nam on July 9, 2003. On April 14, 2021, this national park was recognized by UNESCO as a World Biosphere Reserve with an area of ​​106,600 hectares along with Kon Ha Nung Biosphere Reserve. With forests, semi-deserts, and seas characterized by unique and rare dry regions typical of Vietnam and Southeast Asia.</p>
 <h3 class="mountaintitle">Geographical location</h3>
 <p>Nui Chua National Park is located in Ninh Hai district, Ninh Thuan province, bordering Khanh Hoa province. In the easternmost position of the South Central region, where the Southeast and South Central regions meet, the coordinates are from 11°35'25" to 11°48'38" north latitude and 109°4'5" to 109°14'15" east longitude, the northern limit is the border with Khanh Hoa province. If based on the natural terrain of the entire mountain complex, the northern boundary must be 11°52'27" at Mui Xop of Hon Mot right at the mouth of Cam Ranh Bay, so the north-south direction will be about 33 km and the total direction The coastline will be 57 km long. <br>

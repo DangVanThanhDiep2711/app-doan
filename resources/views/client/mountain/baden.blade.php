@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Bà Đen</div>
 </div>
 <div class="introducing">
-<h1>Conquer Bà Đen Mountain</h1>
+<h2>Conquer Bà Đen Mountain</h2>
 <p>Ba Den Mountain is an extinct volcano located in the center of Tay Ninh province, Vietnam. With an altitude of 986 m, this is the highest mountain   in Southern Vietnam today, known as "The First Heavenly Mountain". <br>
 
 According to Gia Dinh Thanh Thong Chi, the original name of Ba Den Mountain is Ba Dinh. Local elders believe that the original name is Mount Mot. It was not until about half of the 18th century that the name Ba Dinh mountain appeared, then the name gradually became Ba Den mountain. Some people also call it Dien Ba mountain. During the Vietnam War, the area around the mountain was a hot spot as it was where the Ho Chi Minh Trail ended and was a few kilometers west of the Cambodian border. <br>

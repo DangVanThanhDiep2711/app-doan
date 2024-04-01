@@ -1,12 +1,12 @@
 @extends('client.master')
-@section('title' ,'Bà Đen')
+@section('title' ,'Langbiang')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
     <div class="overlay">Mountain Langbiang</div>
 </div>
 <div class="introducing">
-    <h1>Conquer Langbiang Mountain</h1>
+    <h2>Conquer Langbiang Mountain</h2>
     <p>Langbiang Mountain is a cluster of high mountains located 12 km from Da Lat city in Lac Duong district. The two highest mountains here are Ba Mountain 2,167 m high and Ong Mountain 2,124 m high above sea level. Also in the tourist area is the 1,929 m high Radar hill. This hill is also a familiar place for tourists. Looking from the center of Da Lat city, you can see Ba ​​Mountain on the left, Ong Mountain on the right. Langbiang is considered the "roof" of Da Lat and is an attractive and famous tourist destination in this city.</p>
 
     <h3 class="mountaintitle">Information about the route to conquer Langbiang peak</h3>

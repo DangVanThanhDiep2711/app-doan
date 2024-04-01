@@ -6,7 +6,7 @@
     <div class="overlay">Mountain K2</div>
 </div>
 <div class="introducing">
-<h1>Conquer K2 Mountain</h1>
+<h2>Conquer K2 Mountain</h2>
     <p>K2 (also known as Godwin-Austen peak, Lambha Pahar, Chogori, Kechu or Dapsang), 8,611 m (28,251 ft) high is the second highest peak on the ground, located on the border between Taxkorgan district, Kashgar, Xinjiang, China and Pakistan, in the Karakoram Mountains. <br><br>
 
     K2 is known as the "Wild Mountain" because the journey to the top is fierce. With the second highest death rate among mountains over 8,000 meters high, one person dies for every four successful summiteers, the official number being 77 deaths in 300 successful conquests. Because reaching the summit from China is more dangerous and difficult, most climbers choose to go from Pakistan. Unlike Annapurna, the mountain with the highest death rate (191 ascents and 61 deaths), or any mountain higher than 8000 meters, no one has ever climbed K2 in winter.</p>

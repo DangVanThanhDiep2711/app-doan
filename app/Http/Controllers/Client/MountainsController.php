@@ -52,5 +52,11 @@ class MountainsController extends Controller
     public function k2(){
         return view("client.mountain.k2");
     }
+    public function Kangchenjunga(){
+        return view("client.mountain.kangchenjunga");
+    }
+    public function doddabetta(){
+        return view("client.mountain.doddabetta");
+    }
     
 }

@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Nanga Parbat</div>
 </div>
 <div class="introducing">
-<h1>Conquer Nanga Parbat Mountain</h1>
+<h2>Conquer Nanga Parbat Mountain</h2>
     <p>Nanga Parbat (Naked Mountain), Urdu: نانگا پربت [nəŋɡaː pərbət̪] with a height of 8,126 meters (26,660 ft), is the 9th highest mountain in the world. The mountain is located on the western slope of the Himalayas in the Gilgit-Baltistan region of Pakistan. <br><br>
 
     This mountain is also known as "The Cannibal" or "Devil Mountain". This mountain is the scene of many climbing accidents buried in snow. Here there are many of the highest cliffs in the world, especially in the south, a 4,600 m high wall rises. The first recorded attempt to summit a peak above 8,000 meters was during the expedition of Albert F. Mummery and J. Norman Collie, who attempted to reach Mount Nanga Parbat in Kashmir (now Gilgit-Baltistan, Pakistan). in 1895; but this attempt failed when Mummery and two other Gurkhas, Ragobir and Goman Singh, died in an avalanche.</p>

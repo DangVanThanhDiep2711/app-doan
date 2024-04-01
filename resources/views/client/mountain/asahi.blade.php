@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Asahi</div>
 </div>
 <div class="introducing">
-<h1>Conquer Asahi Mountain</h1>
+<h2>Conquer Asahi Mountain</h2>
 <p>Mount Asahi (旭岳 Asahi-dake?) is a mountain located in the town of Higashikawa, Hokkaido and is the highest mountain on the island of Hokkaido. It is part of the Daisetsuzan volcanic group in the Ishikari Mountains, located north of Daisetsuzan National Park. <br>
 
 The mountain is popular with hikers in the summer and is easily accessible from Asahidake Onsen via the Asahidake Ropeway. In winter, the mountain is open to skiing lovers. <br>

@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Huashan</div>
 </div>
 <div class="introducing">
-    <h1>Conquer Huashan Mountain</h1>
+    <h2>Conquer Huashan Mountain</h2>
     <p>Hoa Son (simplified Chinese: 华山, traditional Chinese: 華山; pronunciation: Huà Shān) is one of the five mountains in the Five Mountains of China. The mountain carries with it great historical and religious significance.[citation needed] In 1990, Hoa Son was recognized by UNESCO as a world natural heritage.</p>
 <h3 class="mountaintitle">Geography and characteristics</h3>
     <p>Huashan is a mountain in the eastern section of the Qinling range in southern Shaanxi province, about 100 km east of Xi'an city. Hoa Son has five main peaks, of which the highest peak Nam Phong (in the south) named Lac Nhan ("落雁") is 2,154.9 m high. The mountain is surrounded by granite, from a distance, the mountain shape stands up like a flower and is therefore called "Hoa Son" (in ancient Chinese, "flower" and "ho" are related to together). The main peak is 2,083m high, called Thai Hoa Son or Tay Nhac. Hoa Son is famous as a dangerous place, testing the skills of brave mountain climbers. <br>

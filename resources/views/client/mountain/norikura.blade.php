@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Norikura</div>
 </div>
 <div class="introducing">
-<h1>Conquer Norikura Mountain</h1>
+<h2>Conquer Norikura Mountain</h2>
 <p>Mount Norikura (乗鞍岳 Norikura-dake?) is a potentially active volcano located on the border of Gifu and Nagano prefectures in Japan. This is part of the Hida mountain range, which is listed in the list of 100 famous mountains in Japan.</p>
 
 <div><img class="img6" src="{{asset('blog/files/Norikura.jpg')}}" alt="núi Norikura"></div>

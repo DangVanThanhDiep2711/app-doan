@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Zao</div>
 </div>
 <div class="introducing">
-<h1>Conquer Zao Mountain</h1>
+<h2>Conquer Zao Mountain</h2>
 <h3 class="mountaintitle">Mount Asahi currently exhibits steam activity in the form of fumaroles.</h3>
 <p>Although Zao ski resort has many small hotels, restaurants and souvenir shops, it still retains the charm of a small hot spring village. The vast mountain landscape here is guarded by "snow monsters".</p>
 <div><img class="img6" src="{{asset('blog/files/truottyetzao.jpg')}}" alt="trượt tuyết"></div>

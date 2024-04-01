@@ -6,7 +6,7 @@
     <div class="overlay">Mountain Tai Shan</div>
 </div>
 <div class="introducing">
-    <h1>Conquer Tai Shan Mountain</h1>
+    <h2>Conquer Tai Shan Mountain</h2>
     <p>Mount Tai (Chinese: 泰山; pinyin: Tai Shān) is a mountain of historical and cultural significance located north of Tai'an city, Shandong, China. Its highest point is called Jade Emperor Peak (simplified Chinese: 玉皇顶; traditional Chinese: 玉皇頂; pinyin: Yùhuáng Dǐng) at 1,545 meters (5,069 ft) but according to agency reports under the Chinese Government is 1,532.7 meters (5,029 ft). <br>
     Thai Son is known as Dong Nhac, one of the Five Famous Mountains in China and is considered the most important mountain among them. In addition, Taishan is also a place with a worship history of at least 3,000 years, and has been one of China's most important religious ritual centers throughout history.</p>
 <h3 class="mountaintitle">Location</h3>

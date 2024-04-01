@@ -78,6 +78,9 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('norikura', 'norikura')->name('norikura');
         Route::get('nangaparbat', 'nangaparbat')->name('nangaparbat');
         Route::get('k2', 'k2')->name('k2');
+        Route::get('kangchenjunga', 'kangchenjunga')->name('kangchenjunga');
+        Route::get('doddabetta', 'doddabetta')->name('doddabetta');
+        
 
         
 

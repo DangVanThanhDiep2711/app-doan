@@ -2,8 +2,6 @@
 @section('title' ,'Viet Nam')
 @section('action', 'List Mountains')
 
-<link rel="stylesheet" href="{{ asset('admin/mountrains/style.css')}}">
-
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/vietnam.jpg')}}" class="img1">
@@ -18,8 +16,8 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-ba-den.jpg')}}" alt="">
-                <h3>Núi Bà Đen</h3>
+                <a href="{{route('client.mountain.baden')}}"><img src="{{asset('blog/files/nui-ba-den.jpg')}}" alt="">
+                <h3>Mountain Bà Đen</h3>
             </div>
             <div class="stars">
                 <a href="#"><i class='bx bxs-star'></i></a>
@@ -30,7 +28,7 @@
             </div>
             <div class="dest-content">
                 <div class="location">
-                    <li><h4>Núi Bà Đen</h4></li>
+                    <li><h4>Mountain Bà Đen</h4></li>
                 <ul class="pac-details">
                     <li>Tây Ninh</li>
                     <li>Height 986m</li>
@@ -42,8 +40,8 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-chua.jpeg')}}" alt="">
-                <h3>Núi Chúa</h3>
+                <a href="{{route('client.mountain.chua')}}"><img src="{{asset('blog/files/nui-chua.jpeg')}}" alt="">
+                <h3>Mountain Chúa</h3>
             </div>
 
             <div class="stars">
@@ -56,7 +54,7 @@
         
             <div class="dest-content">
                 <div class="location">
-                    <h4>Núi Chúa</h4>
+                    <h4>Mountain Chúa</h4>
                     <ul class="pac-details">
                         <li>Ninh Thuận</li>
                         <li>Height 1039 m</li>
@@ -68,8 +66,8 @@
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-chua-chan.png')}}" alt="">
-                <h3>Núi Chứa Chan</h3>
+                <a href="{{route('client.mountain.chuachan')}}"><img src="{{asset('blog/files/nui-chua-chan.png')}}" alt="">
+                <h3>Mountain Chứa Chan</h3>
             </div>
 
             <div class="stars">
@@ -82,7 +80,7 @@
 
             <div class="dest-content">
                 <div class="location">
-                    <h4>Núi Chứa Chan</h4>
+                    <h4>Mountain Chứa Chan</h4>
                     <ul class="pac-details">
                         <li>Đồng Nai</li>
                         <li>Height 837m</li>
@@ -96,37 +94,11 @@
             </div>
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="{{asset('blog/files/nui-cam-an-giang.png')}}" alt="">
-                <h3>Núi Cấm</h3>
-            </div>
-
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-            </div>
-        
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Núi Cấm</h4>
-                    <ul class="pac-details">
-                        <li>An Giang</li>
-                        <li>Height 705m</li>
-                        <li>Cam Mountain is located in An Hao commune, Tinh Bien town, about 90 km from Long Xuyen city center along Highway 91 turning to provincial road 948, and about 37 km from Chau Doc city. The mountain has an altitude of 705 m, accounting for a circumference of 28,600 m. Bo Hong peak on Cam mountain is the highest peak in That Son and Cam mountain is also the highest mountain in the Mekong Delta. <br>
-                        Cam Mountain or Cam Son was the first official written name to appear in Dai Nam Nhat Thong Chi compiled at the end of the 19th century. The book described: ...the mountain is towering, the trees are lush, is one of the Seven Mountains. Because the mountain is high, few people reach the top.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-Langbiang.jpg')}}" alt="">
-                <h3>Núi Langbiang</h3>
+                <a href="{{route('client.mountain.langbiang')}}"><img src="{{asset('blog/files/nui-Langbiang.jpg')}}" alt="">
+                <h3>Mountain Langbiang</h3>
             </div>
 
             <div class="stars">
@@ -139,7 +111,7 @@
         
             <div class="dest-content">
                 <div class="location">
-                    <h4>Núi Langbiang</h4>
+                    <h4>Mountain Langbiang</h4>
                     <ul class="pac-details">
                         <li>Lâm Đồng</li>
                         <li>Height 1039 m</li>
@@ -149,31 +121,7 @@
             </div>
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="{{asset('blog/files/nui-ba-ra.jpg')}}" alt="">
-                <h3>Núi Bà Rá</h3>
-            </div>
-
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-            </div>
         
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Núi Bà Rá</h4>
-                    <ul class="pac-details">
-                        <li>Bình Phước</li>
-                        <li>Height 723m</li>
-                        <li>Ba Ra peak is 723m high in Phuoc Long town, Binh Phuoc. Ba Ra has a peaceful, romantic space and majestic nature. From Dong Xoai town, follow provincial road 741, through Phuoc Long town center to Ba Ra mountain cable car station, 500m past that is the road to the mountain. You can travel by motorbike to a Height of about 150m to Bang Lang hill. On the right side of Bang Lang hill are stone steps forming the main path up the mountain. On both sides are woven bamboo rows that shade the entire path. At the top of the mountain, visitors can freely enjoy the panoramic view of Thac Mo hydroelectric lake and the poetic scenery of this area.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
     </div>
 

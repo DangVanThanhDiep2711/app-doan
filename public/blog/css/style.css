@@ -1298,3 +1298,34 @@ button {
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
 }
+
+.introducing{
+    width: 75%;
+    margin: auto;
+}
+.img5{
+    margin-left: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mountaintitle{
+    margin-top: 50px;
+
+}
+
+.mountaintitlee{
+    margin-top: 10px;
+}
+
+.ul-li-mountain{
+    width: 90%;
+    margin: auto;
+}
+
+.img6{
+    width: 55%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

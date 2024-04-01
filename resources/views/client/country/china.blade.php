@@ -44,7 +44,7 @@ $(function () {
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/thaison.jpg')}}" alt="">
+                <a href="{{route('client.mountain.taishan')}}"><img src="{{asset('blog/files/thaison.jpg')}}" alt="">
                 <h3>Tàishān</h3>
             </div>
             <div class="stars">
@@ -67,8 +67,8 @@ $(function () {
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/hoason.jpg')}}" alt="">
-                <h3>hé shān</h3>
+                <a href="{{route('client.mountain.huashan')}}"><img src="{{asset('blog/files/hoason.jpg')}}" alt="">
+                <h3>Huashan</h3>
             </div>
 
             <div class="stars">
@@ -81,7 +81,7 @@ $(function () {
         
             <div class="dest-content">
                 <div class="location">
-                    <h4>Xī yǎ: hé shān</h4>
+                    <h4>Xī yǎ: Huashan</h4>
                     <ul class="pac-details">
                         <li>Height 2.083mm</li>
                         <li>Huashan is a mountain in the eastern section of the Qinling range in southern Shaanxi province, about 100 km east of Xi'an city - the ancient capital. Hoa Son is famous for its majestic beauty and the most dangerous roads in the world that many people want to try to conquer. This landscape was recognized by UNESCO as a World Natural Heritage in 1990.<br>
@@ -94,8 +94,8 @@ $(function () {
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/hanhson.jpg')}}" alt="">
-                <h3>Hán shān</h3>
+                <a href="{{route('client.mountain.hanshan')}}"><img src="{{asset('blog/files/hanhson.jpg')}}" alt="">
+                <h3>Hán Shān</h3>
             </div>
 
             <div class="stars">
@@ -108,7 +108,7 @@ $(function () {
 
             <div class="dest-content">
                 <div class="location">
-                    <h4>Nán yǎ: Hán shān</h4>
+                    <h4>Nán yǎ: Hán Shān</h4>
                     <ul class="pac-details">
                         <li>Height 1300m</li>
                         <li>Located in the Nam Nhac area of ​​Ngu Nhac, 50 km from the center of Hengyang city, Hunan province - China, Hengshan is made up of granite, steep cliffs with a Height of 1,290 m, has a strange shape and includes 72 large and small mountain peaks.  <br>
@@ -121,7 +121,7 @@ $(function () {
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/hangson.jpg')}}" alt="">
+                <a href="{{route('client.mountain.hangshan')}}"><img src="{{asset('blog/files/hangson.jpg')}}" alt="">
                 <h3>háng shān</h3>
             </div>
 
@@ -147,8 +147,8 @@ $(function () {
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-Langbiang.jpg')}}" alt="">
-                <h3>dōngshān</h3>
+                <a href="{{route('client.mountain.dongshan')}}"><img src="{{asset('blog/files/tungson.jpg')}}" alt="">
+                <h3>Dōngshān</h3>
             </div>
 
             <div class="stars">
@@ -161,7 +161,7 @@ $(function () {
         
             <div class="dest-content">
                 <div class="location">
-                    <h4>Zhōng yǎ: dōngshān</h4>
+                    <h4>Zhōng yǎ: Dōngshān</h4>
                     <ul class="pac-details">
                         <li>Height 1.512m</li>
                         <li>Tung Son is located in Dang Phong, Zhengzhou, Henan province, China, to the north overlooking the Yellow River, to the south Lac Thuy overlooking Dinh Thuy, to the east Co Son is connected to the capital of Bien Luong of the 5 dynasties, to the west adjacent to the ancient capital Luoyang of 9 dynasties. That's why it is called "Bien Lac Bi Kinh, Ky Noi Nam Mountain", the number one famous mountain in the Central Plains.<br>

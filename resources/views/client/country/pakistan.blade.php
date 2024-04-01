@@ -16,7 +16,7 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nanga-parbat.jpg')}}" alt="">
+                <a href="{{route('client.mountain.nangaparbat')}}"><img src="{{asset('blog/files/nanga-parbat.jpg')}}" alt="">
                 <h3>Nanga Parbat</h3>
             </div>
             <div class="stars">
@@ -41,7 +41,7 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/k2.png')}}" alt="">
+                <a href="{{route('client.mountain.k2')}}"><img src="{{asset('blog/files/k2.png')}}" alt="">
                 <h3>K2</h3>
             </div>
 

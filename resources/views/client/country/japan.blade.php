@@ -16,7 +16,7 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/asahi.jpg')}}" alt="">
+                <a href="{{route('client.mountain.asahi')}}"><img src="{{asset('blog/files/asahi.jpg')}}" alt="">
                 <h3>Asahi</h3>
             </div>
             <div class="stars">
@@ -41,7 +41,7 @@
         
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/zao.jpg')}}" alt="">
+                <a href="{{route('client.mountain.zao')}}"><img src="{{asset('blog/files/zao.jpg')}}" alt="">
                 <h3>Zao</h3>
             </div>
 
@@ -69,7 +69,7 @@
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/asama.jpg')}}" alt="">
+                <a href="{{route('client.mountain.asama')}}"><img src="{{asset('blog/files/asama.jpg')}}" alt="">
                 <h3>Asama</h3>
             </div>
 
@@ -93,65 +93,11 @@
             </div>
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="{{asset('blog/files/Kuju.jpg')}}" alt="">
-                <h3>Kuju</h3>
-            </div>
 
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-            </div>
-        
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Kuju</h4>
-                    <ul class="pac-details">
-                        <li>Height 1786m</li>
-                        <li>Kuju is a beautiful Japanese mountain located along the Yamanami Expressway, Oita Prefecture. Not only that, this 1786m high mountain is also a treasure of Aso-Kuju National Park with rare flora and fauna. <br>
-
-                        There are many trails leading up the mountain, but the most beautiful are still Makimoto and Choujabaru passes. Coming here, you will admire the impressive and colorful natural scenery all year round. Especially in the fall, yellow leaves falling all over the path combined with fog covering the trees create an extremely romantic picture suitable for mountain climbing in Japan.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="box">
             <div class="image">
-                <img src="{{asset('blog/files/nui-Langbiang.jpg')}}" alt="">
-                <h3>Norikura</h3>
-            </div>
-
-            <div class="stars">
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star'></i></a>
-                <a href="#"><i class='bx bxs-star-half'></i></a>
-            </div>
-        
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Norikura</h4>
-                    <ul class="pac-details">
-                        <li>Height 3.026m</li>
-                        <li>Mount Norikura is one of the highest mountains in Japan with an altitude of 3026m located along the border of Nagano and Gifu prefectures, also part of the famous Japanese Alps. To reach this majestic mountain peak, you can take a bus from Norikura Kogen to the 2700m high Norikura bus station, then continue walking to conquer the zigzag trail to the top of the mountain. <br>
-
-                        Besides the unique natural scenery, Norikura Mountain also regularly organizes many interesting activities such as hiking, climbing, cycling...
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="{{asset('blog/files/Norikura.jpg')}}" alt="">
+                <a href="{{route('client.mountain.norikura')}}"><img src="{{asset('blog/files/Norikura.jpg')}}" alt="">
                 <h3>Norikura</h3>
             </div>
 

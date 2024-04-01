@@ -15,7 +15,7 @@ use App\Http\Controllers\Client\TourController;
 use App\Http\Controllers\Client\ContactusController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\Logout;
-
+use App\Http\Controllers\Client\MountainsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +61,26 @@ Route::prefix('client')->name('client.')->group(function () {
     });
     Route::prefix('contactus')->name('contactus.')->controller(ContactusController::class)->group(function () {
         Route::get('show', 'show')->name('show');
+    });
+    Route::prefix('mountain')->name('mountain.')->controller(MountainsController::class)->group(function () {
+        Route::get('baden', 'baden')->name('baden');
+        Route::get('chua', 'chua')->name('chua');
+        Route::get('chuachan', 'chuachan')->name('chuachan');
+        Route::get('langbiang', 'langbiang')->name('langbiang');
+        Route::get('taishan', 'taishan')->name('taishan');
+        Route::get('huashan', 'huashan')->name('huashan');
+        Route::get('hanshan', 'hanshan')->name('hanshan');
+        Route::get('hangshan', 'hangshan')->name('hangshan');
+        Route::get('dongshan', 'dongshan')->name('dongshan');
+        Route::get('asahi', 'asahi')->name('asahi');
+        Route::get('zao', 'zao')->name('zao');
+        Route::get('asama', 'asama')->name('asama');
+        Route::get('norikura', 'norikura')->name('norikura');
+        Route::get('nangaparbat', 'nangaparbat')->name('nangaparbat');
+        Route::get('k2', 'k2')->name('k2');
+
+        
+
     });
 });
 Route::prefix('admin')->name('admin.')->group(function () {

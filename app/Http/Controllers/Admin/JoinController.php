@@ -46,7 +46,7 @@ class JoinController extends Controller
         $join->quantity=$request->quantity;
         $join->date = $request->date;
         $join->save();
-        return redirect()->route('admin.join.index')->with('success','Create country successfully');
+        return redirect()->route('client.home')->with('success','Create country successfully');
     }
 
     /**

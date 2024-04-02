@@ -13,10 +13,8 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
-    
-   
+
+
 </head>
 <body class="register-body">
 <!-- Background Video & Header -->
@@ -37,12 +35,20 @@
                     </ul>
                 
                 </li>
+
                 <li><a href="#">Tours</a>
+
+                @if (Auth::check())
+                <li><a href="#locations">Tours</a>
+
                     <ul class="sub-menu">
+                        <li><a href="{{route('client.tour.create')}}">Create Tour</a></li>
                         <li><a href="{{route('client.tour.show')}}">Availabled Tours</a></li>
+                        <li><a href="{{route('client.tour.memberjoin')}}">MemberJoin</a></li>
                         <li><a href="{{route('client.tour.showvalidate')}}">Validated Tours</a></li>
                         <li><a href="{{route('client.tour.showrejected')}}">Rejected Tours</a></li>                
                     </ul></li>    
+                    @endif
                 <li><a href="{{route('client.contactus.show')}}">Contact Us</a></li>
                 <li><a href="#">Learn</a>
                     <ul class="sub-menu">
@@ -51,7 +57,14 @@
                     </ul>
                 </li>
                 @if (Auth::check())
-                <li><a href="{{route('logout')}}">Sign out</a></li>    
+                <li>
+                    
+                    <a href="#">{{Auth::user()->fullname}}</a>
+                    <ul class="sub-menu">
+                        <li><a href="{{route('client.tour.create')}}">Infomation</a></li>
+                        <li><a href="{{route('logout')}}">Sign out</a></li>                
+                    </ul>
+                </li>    
                 @else
                 <li><a href="{{route('client.sign-in.login')}}">Sign in</a></li>                    
                 @endif               

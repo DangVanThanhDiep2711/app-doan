@@ -16,7 +16,7 @@ class MemberJoinController extends Controller
     public function index()
     {
         $memberjoin = MemberJoin::with('user')->where('status', '!=' , 4)->orderBy('created_at','DESC')->get();
-        return view('admin.modules.memberjoin.index',[
+        return view('client.home.memberjoin',[
             'memberjoins' =>$memberjoin
         ]);
     }

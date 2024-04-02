@@ -26,7 +26,6 @@ class StoreRequest extends FormRequest
             'infomation' => 'required',
             'quantity' => 'required|numeric',
             'date' => 'required',
-
         ];
     }
 

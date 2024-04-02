@@ -10,14 +10,26 @@ use App\Models\MemberJoin;
 use App\Models\Mountain;
 use DB;
 class TourController extends Controller
-{
+{   
+    
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        $mountain = Mountain::get();
+        return view('client.home.createtour',[
+            'mountains' => $mountain,
+        ]);
+    }
     public function show()
     {
         $join = Join::get();
-        $memberjoin = MemberJoin::get();
+        $memberjoin = MemberJoin::get(); 
         return view("client.home.tour",[
             'joins' =>$join,
-            'memberjoins'=>$memberjoin
+            'memberjoins'=>$memberjoin,
+            
         ]);
     }
     public function showvalidate()
@@ -42,6 +54,13 @@ class TourController extends Controller
         return view("client.home.waiting",[
             'joins' =>$join,
             'memberjoins'=>$memberjoin
+        ]);
+    }
+    public function memberjoin(){
+        $memberjoin = MemberJoin::get();
+       
+        return view("client.home.memberjoin",[
+            'memberjoins' =>$memberjoin,
         ]);
     }
 }

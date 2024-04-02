@@ -24,19 +24,13 @@ class TourController extends Controller
     }
     public function show()
     {
-        $join = Join::get('quantity');
-        $memberjoin = MemberJoin::select('join_id',DB::raw('count(*) as total'))->groupBy('join_id')->pluck('total','join_id');    
-        $total=$memberjoin->get(1);           
+        $join = Join::get();
+        $memberjoin = MemberJoin::get(); 
         return view("client.home.tour",[
             'joins' =>$join,
             'memberjoins'=>$memberjoin,
-            'totals'=>$total,
+            
         ]);
-    }
-    public function isFull(){
-        $join = Join::get('quantity');
-        $memberjoin = MemberJoin::get();
-        return $this->$memberjoin->count() >= $this->$join;
     }
     public function showvalidate()
     {
@@ -60,6 +54,13 @@ class TourController extends Controller
         return view("client.home.waiting",[
             'joins' =>$join,
             'memberjoins'=>$memberjoin
+        ]);
+    }
+    public function memberjoin(){
+        $memberjoin = MemberJoin::get();
+       
+        return view("client.home.memberjoin",[
+            'memberjoins' =>$memberjoin,
         ]);
     }
 }

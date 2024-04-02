@@ -11,17 +11,16 @@
 
 @if (Auth::check())
 <section class="container">
-    
-    <table name="created" border="1px" class="tb1">
+    <table border="1px" class="tb1">
         <thead class="head1">
             <tr>
-                <th>ID</th>
-                <th>Mountain</th>
-                <th>Name</th>
-                <th>Infomation</th>
-                <th>Quantity</th>
-                <th>Date</th>
-                <th>Register Now</th>         
+                <th scope="col">ID</th>
+                <th scope="col">Mountain</th>
+                <th scope="col">Name</th>
+                <th scope="col">Infomation</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Date</th>
+                <th scope="col">Register Now</th>         
             </tr>
         </thead>
         @foreach ($joins as $join)
@@ -46,18 +45,11 @@
                 <select class="form-control" name="status">
                 <option value="1" selected >validated</option>
                 </select>
-                </div>  
-                   
-                @if ($totals>=$join->quantity)
-                <td><input type="button" value="Full" class="btn1"></td>
-                @else
-                <td><input type="submit" value="Register" class="btn1"></td>
-                @endif   
-                
+                </div>              
+                <td><input type="submit" value="Register" class="btn1"></td>         
                 </form>
             </tr>
         </tbody>
-        
         @endforeach
         <thead class="head1">
             <tr>

@@ -44,6 +44,7 @@
                     <ul class="sub-menu">
                         <li><a href="{{route('client.tour.create')}}">Create Tour</a></li>
                         <li><a href="{{route('client.tour.show')}}">Availabled Tours</a></li>
+                        <li><a href="{{route('client.tour.memberjoin')}}">MemberJoin</a></li>
                         <li><a href="{{route('client.tour.showvalidate')}}">Validated Tours</a></li>
                         <li><a href="{{route('client.tour.showrejected')}}">Rejected Tours</a></li>                
                     </ul></li>    

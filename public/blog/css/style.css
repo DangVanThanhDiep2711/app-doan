@@ -874,7 +874,7 @@ nav ul li a{
 .tb1{
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 40px;
+   
 }
 .head1{
     background-color: #12abe7;
@@ -1298,8 +1298,153 @@ button {
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
 }
-.form1{
-    border: 1px solid black;
-    text-align: center;
-    width: 100%;
+
+th{
+    background-color: rgba(38,137,13,1);
+      border: 1px solid rgba(134,188,37,1);
+      font-weight: normal;
+      text-align: center;
+      color: white;
+      
+      
+} 
+th,
+  td {
+    padding: .5em;
+    vertical-align: middle;
+    
+    @media (min-width: bp-lisa) {
+      padding: .75em .5em; 
+    }
+    
+    @media (min-width: bp-bart) {
+      display: table-cell;
+      padding: 0.5em;
+    }
+    
+    @media (min-width: bp-marge) {
+      padding: 0.75em 0.5em; 
+    }
+    
+    @media (min-width: bp-homer) {
+      padding: 0.75em; 
+    }
+  }
+  tbody {
+    @media (min-width: bp-bart) {
+      
+      display: table-row-group; 
+    }
+}  
+th[scope="row"] {
+    background-color: rgba(38,137,13,1);
+    color: white;
+    
+    @media (min-width: bp-lisa) {
+      border-left: 1px solid rgba(134,188,37,1);
+      border-bottom: 1px solid rgba(134,188,37,1);
+    }
+    
+    @media (min-width: bp-bart) {
+      background-color: transparent;
+      color: rgba(0,0,0.87);
+      text-align: left;
+    }
+  }
+  .top-wrapper{
+    padding: 2em 2em 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background: linear-gradient(45deg, #BB1881, #F88B50);
+    font-family: sans-serif;
+  }
+  .contact-wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
+
+.container1 {
+    max-width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e4f73e;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  .form-group input {
+    width: 100%;
+    padding:10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group button {
+    width: 100%;
+    background-color: #007bff;
+    padding:10px 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .form-group textarea {
+    width: 100%;
+    padding:10px 0 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding:10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  .alert { 
+    border: 1px solid transparent;
+    border-radius: 4px;
+ 
+    max-width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .alert-dismissible {
+    position: relative;
+    padding-right: 35px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: inherit;
+  }
+  
+  .close:hover {
+    cursor: pointer;
+  }

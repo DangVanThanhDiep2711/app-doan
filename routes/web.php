@@ -59,6 +59,7 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('showvalidate', 'showvalidate')->name('showvalidate');
         Route::get('showrejected', 'showrejected')->name('showrejected');
         Route::get('waiting', 'waiting')->name('waiting');
+        Route::get('memberjoin', 'memberjoin')->name('memberjoin');
     });
     Route::prefix('contactus')->name('contactus.')->controller(ContactusController::class)->group(function () {
         Route::get('show', 'show')->name('show');

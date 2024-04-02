@@ -7,10 +7,9 @@
     <img src="{{asset('blog/files/nui4.jpg')}}" class="img1">
     <div class="overlay">Validated Tour</div>
 </div>
-
 @if (Auth::check())
 <section class="container">
-    <table name="created" border="1px" class="tb1">
+    <table border="1px" class="tb1">
         <thead class="head1">
             <tr>
                 <th>ID</th>
@@ -18,11 +17,9 @@
                 <th>Name Tour</th>
                 <th>Infomation</th>
                 <th>Quantity</th>
-                <th>DateTime</th>
                 <th>Status</th>         
             </tr>
         </thead>
-        
         @foreach ($memberjoins as $memberjoin) 
         <tbody class="body1">
             <tr>
@@ -32,7 +29,6 @@
                 <td>{{$memberjoin->join->name}}</td>
                 <td>{{$memberjoin->join->infomation}}</td>
                 <td>{{$memberjoin->join->quantity}}</td> 
-                <td>{{$memberjoin->date}}</td>
                 @if ($memberjoin->status == 1)
                 <td><span class="right badge badge-{{$memberjoin->status == 1 ?'dark':'success'}}">Waiting</td>
                 @endif
@@ -46,17 +42,16 @@
             </tr>
         </tbody> 
         @endforeach
-        <tfoot>
+        <thead class="head1">
             <tr>
                 <th>ID</th>
                 <th>Mountain</th>
                 <th>Name Tour</th>
-                <th>DateTime</th>
                 <th>Infomation</th>
                 <th>Quantity</th>
                 <th>Status</th>         
             </tr>
-        </tfoot>
+        </thead>
     </form>
     </table>   
 </section>

@@ -8,20 +8,16 @@
                 <form action="{{route('client.sign-in.store')}}" method="post" enctype="multipart/form-data" class="login__form">
                     @csrf
                    <h1 class="login__title">Register</h1>
-       
                    <div class="login__content">
                       <div class="login__box">
-                         <i class="ri-user-3-line login__icon"></i>
-       
+                        <i class="fa-solid fa-envelope"></i>
                          <div class="login__box-input">
                             <input type="email" required class="login__input" id="email" name="email" placeholder=" ">
                             <label for="login-email" class="login__label">Email</label>
                          </div>
                       </div>
-       
                       <div class="login__box">
-                         <i class="ri-lock-2-line login__icon"></i>
-       
+                        <i class="fa-solid fa-key"></i>
                          <div class="login__box-input">
                             <input type="password" required class="login__input" id="password" name="password" placeholder=" ">
                             <label for="login-pass" class="login__label">Password</label>
@@ -30,7 +26,7 @@
                       </div>
                    </div>
                           <div class="login__box">
-                                <i class="ri-lock-2-line login__icon"></i>
+                           <i class="fa-solid fa-key"></i>
                  <div class="login__box-input">
                     <input type="password" required class="login__input" id="password.confirm" name="password-confirmation"placeholder=" ">
                     <label for="login-pass" class="login__label">Password-confirm</label>
@@ -44,10 +40,10 @@
                                   <input type="text" required class="login__input" id="phone" name="phone" placeholder=" ">
                                  <label for="login-pass" class="login__label">Phone</label>
                                </div>
-                                </div>
+                        </div>
                     <br>
                     <div class="login__box">
-                        <i class="fa-solid fa-phone"></i>
+                     <i class="fa-solid fa-address-card"></i>
                                       <div class="login__box-input">
                                       <input type="text" required class="login__input" id="fullname" name="fullname" placeholder=" ">
                                      <label for="login-pass" class="login__label">Fullname</label>

@@ -14,7 +14,7 @@ class MemberJoinController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    {   
         $memberjoin = MemberJoin::with('user')->where('status', '!=' , 4)->orderBy('created_at','DESC')->get();
         return view('client.home.memberjoin',[
             'memberjoins' =>$memberjoin

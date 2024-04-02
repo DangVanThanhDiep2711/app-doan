@@ -23,7 +23,21 @@
                 <th scope="col">Register Now</th>         
             </tr>
         </thead>
+        
+        
         @foreach ($joins as $join)
+        @php
+                $register = DB::table('memberjoins')->where([
+                    ['join_id', $join->id],
+                    ['status', 1]
+                ])->count();
+                $registerMember =DB::table('memberjoins')->where([
+                    ['join_id', $join->id],
+                    ['user_id', Auth::user()->id]
+                ])->exists();
+            @endphp
+
+        
         <tbody class="body1">
             <tr>
                 <td>{{$loop->iteration}}</td>
@@ -31,15 +45,17 @@
                 <td>{{$join->name}}</td>
                 <td>{{$join->infomation}}</td>
                 <td>{{$join->quantity}}</td>
-                <td>{{date('d/m/Y - H:m:i', strtotime($join->date))}}</td>  
+                <td>{{date('d/m/Y - H:m:i', strtotime($join->date))}}</td> 
+
+                @if (!$registerMember && !($register >= $join->quantity)) 
                 <form action="{{route('admin.memberjoin.store')}}" method="post">
                     @csrf
                 <div id="hiddenElement" style="visibility: hidden;">
                 <select name="join_id">
                     <option value="{{$join->id}}">{{$join->name}}</option>
                 </select>
-                <select  name="user_id">
-                    <option value="{{Auth::user()->id}}" >{{Auth::user()->fullname}}</option>
+                <select name="user_id">
+                    <option value="{{Auth::user()->id}}" >{{Auth::user()->fullname}} </option>
                 </select>
                 <label>Status</label>
                 <select class="form-control" name="status">
@@ -48,9 +64,13 @@
                 </div>              
                 <td><input type="submit" value="Register" class="btn1"></td>         
                 </form>
+                @endif 
             </tr>
         </tbody>
+        
+    
         @endforeach
+        
         <thead class="head1">
             <tr>
                 <th>ID</th>

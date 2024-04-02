@@ -27,7 +27,7 @@
             
             <ul class="navbar">
                 <li><a href="{{route('client.home')}}">Home</a></li>
-                <li><a href="#locations">Countries</a>
+                <li><a href="#locaitons">Countries</a>
                     <ul class="sub-menu">
                         <li><a href="{{route('client.country.vietnam')}}">Vietnam</a></li>
                         <li><a href="{{route('client.country.china')}}">China</a></li>
@@ -37,7 +37,7 @@
                     </ul>
                 
                 </li>
-                <li><a href="#locations">Tours</a>
+                <li><a href="#">Tours</a>
                     <ul class="sub-menu">
                         <li><a href="{{route('client.tour.show')}}">Availabled Tours</a></li>
                         <li><a href="{{route('client.tour.showvalidate')}}">Validated Tours</a></li>

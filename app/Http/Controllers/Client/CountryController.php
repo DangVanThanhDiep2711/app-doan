@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
 use App\Models\Country;
 use Illuminate\Http\Request;
+use App\Models\Mountain;
 
 class CountryController extends Controller
 {
@@ -23,6 +24,11 @@ class CountryController extends Controller
     }
 
     public function vietnam(){
-        return view("client.country.vietnam");
+        $mountain = Mountain::get();
+       
+        return view("client.country.vietnam"
+        ,[
+            'mountains' =>$mountain
+        ]);
     }
 }

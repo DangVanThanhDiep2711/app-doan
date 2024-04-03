@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\MemberJoin;
 use App\Models\Mountain;
 use DB;
+use App\Rules\UniqueEmail;
 class TourController extends Controller
 {   
     
@@ -23,13 +24,11 @@ class TourController extends Controller
         ]);
     }
     public function show()
-    {
-        $join = Join::get();
-        $memberjoin = MemberJoin::get(); 
+    {   
+        $join=Join::get(); 
         return view("client.home.tour",[
             'joins' =>$join,
-            'memberjoins'=>$memberjoin,
-            
+           
         ]);
     }
     public function showvalidate()
@@ -37,7 +36,7 @@ class TourController extends Controller
         
         $memberjoin = MemberJoin::get();
         return view("client.home.validated",[
-            
+        
             'memberjoins'=>$memberjoin
         ]);
     }

@@ -22,7 +22,6 @@ class StoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required',
             'infomation' => 'required',
             'quantity' => 'required|numeric',
             'date' => 'required',
@@ -32,7 +31,6 @@ class StoreRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'name.required' => 'Please enter Tour name',
             'infomation.required' => 'Please enter Tour infomation',
             'quantity.numeric' => 'quantity must be numeric',
             'quantity.required' => 'please enter member quantity',

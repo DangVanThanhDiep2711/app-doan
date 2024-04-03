@@ -15,14 +15,15 @@
         <thead class="head1">
             <tr>
                 <th scope="col">ID</th>
+                <th scope="col">Creator</th>
                 <th scope="col">Mountain</th>
-                <th scope="col">Name</th>
                 <th scope="col">Infomation</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Date</th>
                 <th scope="col">Register Now</th>         
             </tr>
         </thead>
+        
         
         
         @foreach ($joins as $join)
@@ -40,9 +41,10 @@
         
         <tbody class="body1">
             <tr>
+                
                 <td>{{$loop->iteration}}</td>
+                <td>{{$join->user->fullname}}</td>
                 <td>{{$join->mountain->name}}</td>
-                <td>{{$join->name}}</td>
                 <td>{{$join->infomation}}</td>
                 <td>{{$join->quantity}}</td>
                 <td>{{date('d/m/Y - H:m:i', strtotime($join->date))}}</td> 

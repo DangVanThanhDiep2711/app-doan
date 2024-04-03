@@ -121,6 +121,32 @@
             </div>
         </div>
 
+        <div class="box">
+            <div class="image">
+                <a href="{{route('client.mountain.langbiang')}}"><img src="{{asset('blog/files/nui-Langbiang.jpg')}}" alt="">
+                <h3>Mountain Langbiang</h3>
+            </div>
+
+            <div class="stars">
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star-half'></i></a>
+            </div>
+        
+            <div class="dest-content">
+                <div class="location">
+                    <h4>Mountain Langbiang</h4>
+                    <ul class="pac-details">
+                        <li>Lâm Đồng</li>
+                        <li>Height 1039 m</li>
+                        <li>Located in Lac Duong district, 12 km north of Da Lat city center and 2,000 m above sea level, Langbiang is considered the second highest mountain in the national park mountain system in the National Park. Bidoup country – Ba mountain. From the top of Langbiang mountain, visitors can see almost the entire dreamy Da Lat, admire the beauty of Golden Stream, Silver Stream and the panoramic view of Da Lat tourism from above. Standing in this position, you feel like you are lost in a fairyland, as if you are traveling in the clouds as you enjoy the beauty of the hazy natural picture with the mist flying in front of you.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         
 
     </div>

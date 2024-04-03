@@ -34,8 +34,9 @@
         <!-- Default box -->
         <div class="form-group" >
                         <div class="form-group">
-                            <label>Name</label>
-                            <input type="text"  placeholder="Enter tour name" name="name" value="{{old('name')}}" >
+                            <label>creator</label>
+                            <input type="text"  placeholder="Enter tour name" name="creator" value="{{ Auth::user()->fullname}}" >
+                            <input type="hidden"  placeholder="Enter tour name" name="user_id" value="{{ Auth::user()->id}}" >
                         </div>
                         <div class="form-group">
                             <label>Infomation</label>

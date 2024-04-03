@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('joins', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->text('infomation');
             $table->unsignedBigInteger('mountain_id');
             $table->foreign('mountain_id')->references('id')->on('mountains');

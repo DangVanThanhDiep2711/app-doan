@@ -32,6 +32,10 @@ class Join extends Model
     {
         return $this-> belongsTo(MemberJoin::class);
     }
+    public function user(): BelongsTo
+    {
+        return $this-> belongsTo(User::class);
+    }
     public function isFull(){
         return $this->memberjoins->count() >= $this->quantity;
     }

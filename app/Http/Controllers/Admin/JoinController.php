@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Join;
 use App\Models\Mountain;
+use App\Mail\TourRegisteredMail;
+use Illuminate\Support\Facades\Mail;
 use App\Models\User;
 use App\Http\Requests\Admin\Join\StoreRequest;
 use App\Http\Requests\Admin\Join\UpdateRequest;
@@ -40,13 +42,22 @@ class JoinController extends Controller
     public function store(StoreRequest $request)
     {
         $join = new Join();
-        $join->name = $request->name;
+        $join->user_id = $request->user_id;
         $join->infomation=$request->infomation;
         $join->mountain_id = $request->mountain_id;
         $join->quantity=$request->quantity;
         $join->date = $request->date;
         $join->save();
         return redirect()->route('client.home')->with('success','Create country successfully');
+    }
+
+    public function registerTour(Request $request, $id)
+    {
+        $join = Join::find($id);
+        // Xử lý đăng ký tour ở đây
+
+        // Gửi email
+        Mail::to($join->user->email)->send(new TourRegisteredMail($join));
     }
 
     /**
@@ -63,9 +74,6 @@ class JoinController extends Controller
     public function edit(int $id)
     {   $mountain = Mountain::get();
         $join = Join::findOrFail($id);
-        if($join == null){
-            abort(404);
-        }
         return view('admin.modules.join.edit',[
             'id'=>$id,
             'joins' => $join,

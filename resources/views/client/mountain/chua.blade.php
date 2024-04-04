@@ -2,7 +2,7 @@
 @section('title' ,'Chúa')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/nuichua.jpg')}}" class="img1">
     <div class="overlay">Mountain Chúa</div>
 </div>
 <div class="introducing">

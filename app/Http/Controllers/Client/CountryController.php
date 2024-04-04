@@ -27,10 +27,6 @@ class CountryController extends Controller
     }
     public function japan(){
         $mountain = Mountain::get();
-<<<<<<< HEAD
-=======
-       
->>>>>>> 0d4b5581502ffee1b9527c0fa4e456f9dbfcb1fc
         return view("client.country.japan"
         ,[
             'mountains' =>$mountain

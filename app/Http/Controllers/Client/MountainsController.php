@@ -37,6 +37,9 @@ class MountainsController extends Controller
     public function asahi(){
         return view("client.mountain.asahi");
     }
+    public function fujisan(){
+        return view("client.mountain.fujisan");
+    }
     public function zao(){
         return view("client.mountain.zao");
     }

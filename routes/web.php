@@ -65,23 +65,24 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('show', 'show')->name('show');
     });
     Route::prefix('mountain')->name('mountain.')->controller(MountainsController::class)->group(function () {
-        Route::get('baden', 'baden')->name('baden');
-        Route::get('chua', 'chua')->name('chua');
-        Route::get('chuachan', 'chuachan')->name('chuachan');
-        Route::get('langbiang', 'langbiang')->name('langbiang');
-        Route::get('taishan', 'taishan')->name('taishan');
-        Route::get('huashan', 'huashan')->name('huashan');
-        Route::get('hanshan', 'hanshan')->name('hanshan');
-        Route::get('hangshan', 'hangshan')->name('hangshan');
-        Route::get('dongshan', 'dongshan')->name('dongshan');
-        Route::get('asahi', 'asahi')->name('asahi');
-        Route::get('zao', 'zao')->name('zao');
-        Route::get('asama', 'asama')->name('asama');
-        Route::get('norikura', 'norikura')->name('norikura');
-        Route::get('nangaparbat', 'nangaparbat')->name('nangaparbat');
-        Route::get('k2', 'k2')->name('k2');
-        Route::get('kangchenjunga', 'kangchenjunga')->name('kangchenjunga');
-        Route::get('doddabetta', 'doddabetta')->name('doddabetta');
+        Route::get('baden', 'baden')->name('Baden');
+        Route::get('chua', 'chua')->name('Chua');
+        Route::get('chuachan', 'chuachan')->name('Chuachan');
+        Route::get('langbiang', 'langbiang')->name('Langbiang');
+        Route::get('taishan', 'taishan')->name('Taishan');
+        Route::get('huashan', 'huashan')->name('Huashan');
+        Route::get('hanshan', 'hanshan')->name('Hanshan');
+        Route::get('hangshan', 'hangshan')->name('Hangshan');
+        Route::get('dongshan', 'dongshan')->name('Dongshan');
+        Route::get('asahi', 'asahi')->name('Asahi');
+        Route::get('zao', 'zao')->name('Zao');
+        Route::get('asama', 'asama')->name('Asama');
+        Route::get('norikura', 'norikura')->name('Norikura');
+        Route::get('nangaparbat', 'nangaparbat')->name('Nangaparbat');
+        Route::get('k2', 'k2')->name('K2');
+        Route::get('kangchenjunga', 'kangchenjunga')->name('Kangchenjunga');
+        Route::get('doddabetta', 'doddabetta')->name('Doddabetta');
+        Route::get('fujisan', 'fujisan')->name('Fujisan');
         
 
         

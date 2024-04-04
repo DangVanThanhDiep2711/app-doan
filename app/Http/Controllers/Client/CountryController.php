@@ -16,7 +16,11 @@ class CountryController extends Controller
         return view("client.country.india");
     }
     public function japan(){
-        return view("client.country.japan");
+        $mountain = Mountain::get();
+        return view("client.country.japan"
+        ,[
+            'mountains' =>$mountain
+        ]);
     }
 
     public function pakistan(){

@@ -24,7 +24,7 @@ class StoreRequest extends FormRequest
         return [
             'infomation' => 'required',
             'quantity' => 'required|numeric',
-            'date' => 'required',
+            'date' => 'required|after:today',
         ];
     }
 
@@ -35,6 +35,8 @@ class StoreRequest extends FormRequest
             'quantity.numeric' => 'quantity must be numeric',
             'quantity.required' => 'please enter member quantity',
             'date.required' => 'Please choose date',
+            'date.after:today' => 'Dates in the past cannot be selected',
+
         ];
     }
 }

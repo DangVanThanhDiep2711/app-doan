@@ -27,9 +27,6 @@ Sugatami Lake, just below the summit, is famous for its reflections of mountain 
     </ul>
 </div>
 <p>Mount Asahi currently exhibits steam activity in the form of fumaroles.</p>
-
+@include('client.home.createtour')
 </div>
-
-
-
 @endsection

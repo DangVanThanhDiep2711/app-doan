@@ -23,11 +23,11 @@
 
         <div class="card-body">
                     <div class="form-group">
-                        <label>Tour Name</label>
+                        <label>Mountain</label>
                         <select class="form-control" name="join_id">
                           <option value="0" {{old('join_id')==0?'selected' : ''}}>----- Root -----</option>
                           @foreach ($joins as $join)
-                          <option value="{{$join->id}}" {{old('join_id',$memberjoins->join_id)==$join->id?'selected' : ''}}>{{$join->name}}</option>
+                          <option value="{{$join->id}}" {{old('join_id',$join->id)==$join->id?'selected' : ''}}>{{$join->mountain->name}}</option>
                           @endforeach  
                         </select>
                     </div>

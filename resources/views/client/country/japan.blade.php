@@ -31,14 +31,30 @@
                         <li><h4>{{$mountain->name}} Mountain </h4></li>
                     <ul class="pac-details">
                         <li>Height {{$mountain->height}}m</li>
-                        <li><p>{{$mountain->content}}</p></li>
+                        <li><p>{{Str::words($mountain->content,15)}} <a href="{{route('client.mountain.'.$mountain->name )}}">Read More</a>
+                            </p></li> 
                     </ul>
                     </div>
                 </div>
             </div>
-            @endif  
+            @endif 
+            
             @endforeach
             </div>       
 </section>
 
 @endsection
+<script>
+    function showMore() {
+        var moreText = document.querySelector('.more');
+        var btnText = document.querySelector('button');
+
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'inline';
+            btnText.innerHTML = 'Read less';
+        } else {
+            moreText.style.display = 'none';
+            btnText.innerHTML = 'Read more';
+        }
+    }
+</script> 

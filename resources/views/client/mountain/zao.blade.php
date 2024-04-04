@@ -24,7 +24,7 @@
         <li><p>Zao doesn't have any big hotels</p></li>
     </ul>
 </div>
-
+@include('client.home.createtour')
 </div>
 
 

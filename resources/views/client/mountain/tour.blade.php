@@ -1,14 +1,4 @@
 
-@extends('client.master')
-@section('title' ,'blog về núi')
-
-@section('content')
-
-<div class="image-container">
-    <img src="{{asset('blog/files/nui4.jpg')}}" class="img1">
-    <div class="overlay">Avabledila Tour</div>
-</div>
-
 @if (Auth::check())
 <section class="container">
     <table border="1px" class="tb1">
@@ -22,7 +12,7 @@
                 <th scope="col">Date</th>
                 <th scope="col">Register Now</th>         
             </tr>
-        </thead>
+        </thead>      
  @foreach ($joins as $join)
         @php
                 $register = DB::table('memberjoins')->where([
@@ -35,13 +25,14 @@
                 ])->exists();
             @endphp    
         <tbody class="body1">
-            <tr>      
+            <tr>              
                 <td>{{$loop->iteration}}</td>
                 <td>{{$join->user->fullname}}</td>
                 <td>{{$join->mountain->name}}</td>
                 <td>{{$join->infomation}}</td>
                 <td>{{$join->quantity}}</td>
                 <td>{{date('d/m/Y - H:m:i', strtotime($join->date))}}</td> 
+
                 @if (!$registerMember && !($register >= $join->quantity)) 
                 <form action="{{route('admin.memberjoin.store')}}" method="post">
                     @csrf
@@ -62,21 +53,19 @@
                 @endif 
             </tr>
         </tbody>
-        @endforeach     
+        @endforeach 
         <thead class="head1">
             <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Creator</th>
-                <th scope="col">Mountain</th>
-                <th scope="col">Infomation</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Date</th>
-                <th scope="col">Register Now</th>         
+                <th>ID</th>
+                <th>Mountain</th>
+                <th>Name</th>
+                <th>Infomation</th>
+                <th>Quantity</th>
+                <th>Date</th>
+                <th>Register Now</th>         
             </tr>
         </thead>
     </form>
     </table>        
 </section>
 @endif
-
-@endsection

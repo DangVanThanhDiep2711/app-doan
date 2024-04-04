@@ -45,6 +45,7 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('japan', 'japan')->name('japan');
         Route::get('pakistan', 'pakistan')->name('pakistan');
         Route::get('vietnam', 'vietnam')->name('vietnam');
+        Route::get('show', 'show')->name('show');
     });
     Route::prefix('sign-in')->name('sign-in.')->controller(SigninController::class)->group(function () {
         Route::get('login', 'showLogin')->name('showLogin');
@@ -83,7 +84,10 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('kangchenjunga', 'kangchenjunga')->name('Kangchenjunga');
         Route::get('doddabetta', 'doddabetta')->name('Doddabetta');
         Route::get('fujisan', 'fujisan')->name('Fujisan');
-        
+        Route::get('kitadake', 'kitadake')->name('Kitadake');
+        Route::get('hotakadake', 'hotakadake')->name('Hotakadake');
+        Route::get('yari', 'yari')->name('Yari');
+        Route::get('', '')->name('');
 
         
 

@@ -27,7 +27,7 @@
     If you're leaving from Nagano, take the same JR Shinano Limited Express line bound for Nagoya. There is a convenient bus service from Takayama in neighboring Gifu Prefecture.
     <br><br>
     From Matsumoto, take a train to Shin-Shimashima, then transfer to a bus to the Kanko Center Mae bus stop in the plateau. For other areas in rural Nagano, driving a rental car will give you more freedom to explore.</p>
-
+    @include('client.home.createtour')
 </div>
 
 

@@ -4,62 +4,181 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Join;
+use App\Models\Mountain;
 class MountainsController extends Controller
 {
-    public function baden(){
-        return view("client.mountain.baden");
+        
+    public function baden(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.baden",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function chua(){
-        return view("client.mountain.chua");
+    public function chua(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.chua",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function langbiang(){
-        return view("client.mountain.langbiang");
+    public function langbiang(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.langbiang",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function chuachan(){
-        return view("client.mountain.chuachan");
+    public function chuachan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.chuachan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function taishan(){
-        return view("client.mountain.taishan");
+    public function taishan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.taishan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function huashan(){
-        return view("client.mountain.huashan");
+    public function huashan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.huashan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function hanshan(){
-        return view("client.mountain.hanshan");
+    public function hanshan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.hanshan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function hangshan(){
-        return view("client.mountain.hangshan");
+    public function hangshan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.hangshan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function dongshan(){
-        return view("client.mountain.dongshan");
+    public function dongshan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.dongshan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function asahi(){
-        return view("client.mountain.asahi");
+    public function asahi(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.asahi",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function fujisan(){
-        return view("client.mountain.fujisan");
+    public function fujisan(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.fujisan",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function zao(){
-        return view("client.mountain.zao");
+    public function kitadake(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.kitadake",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function asama(){
-        return view("client.mountain.asama");
+    public function zao(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.zao",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function norikura(){
-        return view("client.mountain.norikura");
+    public function asama(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.asama",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function nangaparbat(){
-        return view("client.mountain.nangaparbat");
+    public function hotakadake (Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.hotakadake",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function k2(){
-        return view("client.mountain.k2");
+    public function norikura(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.norikura",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function Kangchenjunga(){
-        return view("client.mountain.kangchenjunga");
+    public function yari(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.yari",[
+            'mountains' => $mountain,
+        ]);
     }
-    public function doddabetta(){
-        return view("client.mountain.doddabetta");
+    public function nangaparbat(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.nangaparbat",[
+            'mountains' => $mountain,
+        ]);
+    }
+    public function k2(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.k2",[
+            'mountains' => $mountain,
+        ]);
+    }
+    public function Kangchenjunga(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.kangchenjunga",[
+            'mountains' => $mountain,
+        ]);
+    }
+    public function doddabetta(Request $request){
+        $mountain = Mountain::get();
+        $mountain->id=$request->id;
+        session(["mountain_id"=> $mountain->id]);
+        return view("client.mountain.doddabetta",[
+            'mountains' => $mountain,
+        ]);
     }
     
 }

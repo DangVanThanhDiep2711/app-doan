@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Models\User;
 use App\Http\Requests\Admin\Join\StoreRequest;
 use App\Http\Requests\Admin\Join\UpdateRequest;
+
 class JoinController extends Controller
 
 {
@@ -28,9 +29,11 @@ class JoinController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
+    public function create(Request $request)
+    {   
         $mountain = Mountain::get();
+        $mountain =$request->input('mountain_id');
+        $mountain->id=session()->get('mountain_id');
         return view('admin.modules.join.create',[
             'mountains' => $mountain,
         ]);
@@ -40,15 +43,21 @@ class JoinController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(StoreRequest $request)
-    {
+    {   
         $join = new Join();
         $join->user_id = $request->user_id;
         $join->infomation=$request->infomation;
         $join->mountain_id = $request->mountain_id;
         $join->quantity=$request->quantity;
         $join->date = $request->date;
+        $request->validate([
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
         $join->save();
         return redirect()->route('client.home')->with('success','Create country successfully');
+        
+    
+        
     }
 
     public function registerTour(Request $request, $id)

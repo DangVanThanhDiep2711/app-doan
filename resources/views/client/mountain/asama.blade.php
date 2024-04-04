@@ -43,7 +43,7 @@ The eastern slope of the mountain has a volcano monitoring station operated by t
     <p>Mount Asama had an eruption in 1108 (Tennin 1), which is a topic studied by modern science. Records show that the intensity of this plinian-type eruption was twice that of the Tenmei disaster in 1783.</p>
 <h3 class="mountaintitle">Historical eruptions</h3>
     <p>Mount Asama is recorded in Japanese records as having erupted in the following years: 2009, 2008, 2004, 2003, 1995, 1990, 1983, 1982, 1973, 1965, 1961, 1958–59, 1953–55, 1952, 1952, 1950 –51, 1949, 1947, 1946, 1944–45, 1938–42, 1935–37, 1934, 1934, 1933, 1931–32, 1930, 1929, 1929, 1927–28, 1924, 1922, 1920–21, 1919 , 1918?, 1917, 1916, 1915, 1914, 1909–14, 1908, 1908, 1907, 1907, 1906, 1905?, 1904, 1903, 1902, 1902, 1900–01, 1899, 1899, 1894, 1889, 1879 , 1878?, 1875, 1869, 1815, 1803, 1803, 1783, 1779?, 1777, 1776, 1769, 1762, 1755, 1754, 1733, 1732, 1731, 1729, 1729, 1728, 1723, 1723, 1722, 1721 , 1720, 1719, 1718, 1717, 1711, 1710, 1708–09, 1706, 1704, 1703, 1669, 1661, 1661, 1660, 1659, 1658, 1657, 1656, 1655, 1653 , 1652, 1651, 1650?, 1649, 1648, 1648, 1647, 1645, 1644, 1609, 1605, 1604, 1600, 1598, 1597, 1596, 1596, 1595?, 1591, 1590, 1532, 1528, 1527, 15 18, 1427?, 1281, 1108, 887, 685.</p>
-
+    @include('client.home.createtour')
 </div>
 
 

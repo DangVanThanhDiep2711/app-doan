@@ -146,7 +146,9 @@ nav ul li > .sub-menu {
   .btn2{
     color: red;
   }
-
+.btn3{
+    border: none;
+}
 .navbar a{
     color: white;
     font-size: 16px;
@@ -1495,3 +1497,8 @@ th[scope="row"] {
   .close:hover {
     cursor: pointer;
   }
+.h1{
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}

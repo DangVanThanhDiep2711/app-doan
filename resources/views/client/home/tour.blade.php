@@ -8,6 +8,10 @@
     <img src="{{asset('blog/files/nui4.jpg')}}" class="img1">
     <div class="overlay">Avabledila Tour</div>
 </div>
+  
+
+
+
 
 @if (Auth::check())
 <section class="container">

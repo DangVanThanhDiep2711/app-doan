@@ -65,15 +65,22 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('show', 'show')->name('show');
     });
     Route::prefix('mountain')->name('mountain.')->controller(MountainsController::class)->group(function () {
-        Route::get('baden', 'baden')->name('Baden');
-        Route::get('chua', 'chua')->name('Chua');
-        Route::get('chuachan', 'chuachan')->name('Chuachan');
-        Route::get('langbiang', 'langbiang')->name('Langbiang');
+        //vietNam
+        Route::get('Ba-Den', 'baden')->name('Ba-Den');
+        Route::get('Fansipan', 'fansipan')->name('Fansipan');
+        Route::get('Chua', 'chua')->name('Chua');
+        Route::get('Chua-Chan', 'chuachan')->name('Chua-Chan');
+        Route::get('Langbiang', 'langbiang')->name('Langbiang');
+        Route::get('Pu-Si-Lung', 'pusilung')->name('Pu-Si-Lung');
+        Route::get('Phu-Luong', 'phuluong')->name('Phu-Luong');
+        Route::get('Rao-Co', 'raoco')->name('Rao-Co');
+        //China
         Route::get('taishan', 'taishan')->name('Taishan');
         Route::get('huashan', 'huashan')->name('Huashan');
         Route::get('hanshan', 'hanshan')->name('Hanshan');
         Route::get('hangshan', 'hangshan')->name('Hangshan');
         Route::get('dongshan', 'dongshan')->name('Dongshan');
+        //Japan
         Route::get('asahi', 'asahi')->name('Asahi');
         Route::get('zao', 'zao')->name('Zao');
         Route::get('asama', 'asama')->name('Asama');

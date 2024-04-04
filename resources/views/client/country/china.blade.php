@@ -13,7 +13,7 @@
          @if ($mountain->country->name == "China")
         <div class="box">
             <div class="image">
-                <a href="{{route('client.mountain.taishan')}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt="">
+                <a href="{{route('client.mountain.'.$mountain->name )}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt="">
                 <h3>{{$mountain->name}}</h3>
             </div>
             <div class="stars">

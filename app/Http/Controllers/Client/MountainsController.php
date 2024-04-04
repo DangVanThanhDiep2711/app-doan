@@ -6,34 +6,59 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class MountainsController extends Controller
-{
+{   //VietNam
     public function baden(){
-        return view("client.mountain.baden");
+        return view("client.mountain.Ba-Den");
     }
     public function chua(){
-        return view("client.mountain.chua");
+        return view("client.mountain.Chua");
     }
     public function langbiang(){
-        return view("client.mountain.langbiang");
+        return view("client.mountain.Langbiang");
     }
     public function chuachan(){
-        return view("client.mountain.chuachan");
+        return view("client.mountain.Chua-Chan");
     }
+    public function fansipan(){
+        return view("client.mountain.Fansipan");
+    }
+    public function pusilung(){
+        return view("client.mountain.Pu-Si-Lung");  
+    }
+    public function phuluong(){
+        return view("client.mountain.Phu-Luong");
+    }
+    public function raoco(){
+        return view("client.mountain.Rao-Co");
+    }
+
+    //China
     public function taishan(){
-        return view("client.mountain.taishan");
+        return view("client.mountain.Taishan");
     }
     public function huashan(){
-        return view("client.mountain.huashan");
+        return view("client.mountain.Huashan");
     }
     public function hanshan(){
-        return view("client.mountain.hanshan");
+        return view("client.mountain.Hanshan");
     }
     public function hangshan(){
-        return view("client.mountain.hangshan");
+        return view("client.mountain.Hengshan");
     }
-    public function dongshan(){
-        return view("client.mountain.dongshan");
+    public function songshan(){
+        return view("client.mountain.Songshan");
     }
+    public function wudang(){
+        return view("client.mountain.Wudang");
+    }
+    public function qingcheng(){
+        return view("client.mountain.Qingcheng");
+    }
+    public function laojun(){
+        return view("client.mountain.laojun");
+    }
+
+    //japan
     public function asahi(){
         return view("client.mountain.asahi");
     }

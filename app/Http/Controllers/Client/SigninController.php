@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Carbon;
 class SigninController extends Controller
 {
-    public function store(Request $request){
+    public function store(Request $request){    
         $user=new User ();
         $user->email=$request->email;
         $user->password=bcrypt($request->password);

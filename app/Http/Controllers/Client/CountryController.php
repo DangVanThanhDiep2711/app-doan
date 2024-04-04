@@ -10,13 +10,27 @@ use App\Models\Mountain;
 class CountryController extends Controller
 {
     public function china(){
-        return view("client.country.china");
+        $mountain = Mountain::get();
+       
+        return view("client.country.china"
+        ,[
+            'mountains' =>$mountain
+        ]);
     }
     public function india(){
-        return view("client.country.india");
+        $mountain = Mountain::get();
+       
+        return view("client.country.india"
+        ,[
+            'mountains' =>$mountain
+        ]);
     }
     public function japan(){
         $mountain = Mountain::get();
+<<<<<<< HEAD
+=======
+       
+>>>>>>> 0d4b5581502ffee1b9527c0fa4e456f9dbfcb1fc
         return view("client.country.japan"
         ,[
             'mountains' =>$mountain
@@ -24,7 +38,12 @@ class CountryController extends Controller
     }
 
     public function pakistan(){
-        return view("client.country.pakistan");
+        $mountain = Mountain::get();
+       
+        return view("client.country.pakistan"
+        ,[
+            'mountains' =>$mountain
+        ]);
     }
 
     public function vietnam(){

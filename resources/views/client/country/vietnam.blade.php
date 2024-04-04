@@ -7,17 +7,18 @@
     <img src="{{asset('blog/files/vietnam.jpg')}}" class="img1">
     <div class="overlay">VietNam Mountains</div>
 </div>
-<section class="package" id="package">
-    <div class="package-title">
-        <h2></h2>
-    </div>
+
     <div class="package-content"> 
         @foreach ($mountains as $mountain)
-         @if ($mountain->country->name == "Việt Nam")
+         @if ($mountain->country->name == "Vietnam")
         <div class="box">
             <div class="image">
+
                 <a href="{{route('client.mountain.'.$mountain->name )}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt=""> 
                 <h3> {{$mountain->name}} Mountain </h3>
+
+                
+
             </div>
             <div class="stars">
                 <a href="#"><i class='bx bxs-star'></i></a>
@@ -38,7 +39,12 @@
         </div>
         @endif  
         @endforeach
+
         </div>      
+
+        
+
+
 </section>
 
 @endsection

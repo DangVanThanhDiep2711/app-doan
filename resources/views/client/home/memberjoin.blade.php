@@ -14,7 +14,7 @@
             <thead class="head1">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">TourName</th>
+                    <th scope="col">Mountain</th>
                     <th scope="col">MemberName</th>
                     <th scope="col">Status</th>
                     <th scope="col">Chose</th>
@@ -24,7 +24,7 @@
             <tbody class="body1">
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$memberjoin->join->name}}</td>
+                    <td>{{$memberjoin->join->mountain->name}}</td>
                     <td>{{$memberjoin->user->fullname}}</td>
                     @if ($memberjoin->status == 1)
                         <td><span class="right badge badge-{{$memberjoin->status == 1 ?'dark':'success'}}">Waiting</td>

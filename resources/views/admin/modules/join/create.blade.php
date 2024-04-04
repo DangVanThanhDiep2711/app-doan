@@ -23,6 +23,10 @@
 
         <div class="card-body">
                     <div class="form-group">
+                        <label>Creator</label>
+                        <input type="text" class="form-control" placeholder="Enter mountain name" name="user_id" value="{{ Auth::user()->id}}">
+                    </div>
+                    <div class="form-group">
                         <label>Name</label>
                         <input type="text" class="form-control" placeholder="Enter mountain name" name="name" value="{{old('name')}}">
                     </div>

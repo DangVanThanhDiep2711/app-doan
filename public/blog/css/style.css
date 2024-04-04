@@ -68,6 +68,11 @@ nav{
     padding-top: 50px;
     
 }
+
+.box{
+    width: 20%;
+    margin-left: 5px;
+}
 .image-container {
     position: relative;
     display: inline-block;
@@ -104,7 +109,7 @@ nav ul li{
     
 }
 .dest-content{
-    width: 700px;
+    width: 100%;
 }
 .image{
     margin-bottom: 30px; 
@@ -136,6 +141,10 @@ nav ul li:hover .sub-menu {
 nav ul li > .sub-menu {
     display: none;
     position: absolute;
+  }
+
+  .btn2{
+    color: red;
   }
 
 .navbar a{

@@ -58,6 +58,32 @@ class MountainsController extends Controller
         return view("client.mountain.laojun");
     }
 
+    //india
+    public function kanchenjunga(){
+        return view("client.mountain.Kanchenjunga");
+    }
+    public function kabru(){
+        return view("client.mountain.Kabru");
+    }
+    public function triund (){
+        return view("client.mountain.Triund");
+    }
+    public function doddabetta(){
+        return view("client.mountain.Doddabetta");
+    }
+    public function himalaya(){
+        return view("client.mountain.Himalaya");
+    }
+    public function chembra (){
+        return view("client.mountain.Chembra");
+    }
+    public function apharwat (){
+        return view("client.mountain.Apharwat");
+    }
+    public function kodachadri (){
+        return view("client.mountain.Kodachadri ");
+    }
+
     //japan
     public function asahi(){
         return view("client.mountain.asahi");
@@ -74,17 +100,13 @@ class MountainsController extends Controller
     public function norikura(){
         return view("client.mountain.norikura");
     }
+
+    //pakistan
     public function nangaparbat(){
         return view("client.mountain.nangaparbat");
     }
     public function k2(){
         return view("client.mountain.k2");
-    }
-    public function Kangchenjunga(){
-        return view("client.mountain.kangchenjunga");
-    }
-    public function doddabetta(){
-        return view("client.mountain.doddabetta");
     }
     
 }

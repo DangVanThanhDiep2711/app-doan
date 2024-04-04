@@ -13,6 +13,34 @@
     </div>
 
     <div class="package-content">
+        @foreach ($mountains as $mountain)
+         @if ($mountain->country->name == "India")
+        <div class="box">
+            <div class="image">
+                <a href="{{route('client.mountain.'.$mountain->name )}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt="">
+                <h3>{{$mountain->name}}</h3>
+            </div>
+            <div class="stars">
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star'></i></a>
+                <a href="#"><i class='bx bxs-star-half'></i></a>
+            </div>
+            <div class="dest-content">
+                <div class="location">
+                    <li><h4>{{$mountain->name}} Mountain</h4></li>
+                <ul class="pac-details">
+                    <li>Height {{$mountain->height}}m</li>
+                    <li>{{$mountain->content}}</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        @endif  
+        @endforeach
+
+    {{-- <div class="package-content">
         
         <div class="box">
             <div class="image">
@@ -64,7 +92,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 </section>
 

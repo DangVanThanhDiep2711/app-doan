@@ -89,11 +89,21 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('zao', 'zao')->name('Zao');
         Route::get('asama', 'asama')->name('Asama');
         Route::get('norikura', 'norikura')->name('Norikura');
+
+        //pakistan
         Route::get('nangaparbat', 'nangaparbat')->name('Nangaparbat');
         Route::get('k2', 'k2')->name('K2');
-        Route::get('kangchenjunga', 'kangchenjunga')->name('Kangchenjunga');
-        Route::get('doddabetta', 'doddabetta')->name('Doddabetta');
-        Route::get('fujisan', 'fujisan')->name('Fujisan');
+
+        //india
+        Route::get('Kanchenjunga', 'kanchenjunga')->name('Kanchenjunga');
+        Route::get('Kabru', 'kabru')->name('Kabru');
+        Route::get('Triund', 'triund')->name('Triund');
+        Route::get('Doddabetta', 'doddabetta')->name('Doddabetta');
+        Route::get('Himalaya', 'himalaya')->name('Himalaya');
+        Route::get('Chembra', 'chembra')->name('Chembra');
+        Route::get('Apharwat', 'apharwat')->name('Apharwat');
+        Route::get('Kodachadri', 'kodachadri')->name('Kodachadri');
+
         
 
         

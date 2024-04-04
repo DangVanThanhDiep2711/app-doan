@@ -1,5 +1,5 @@
 @extends('client.master')
-@section('title' ,'Qingcheng')
+@section('title' ,'Laojun')
 @section('content')
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">

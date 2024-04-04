@@ -58,7 +58,7 @@
                         </div>
                         <div class="form-group">
                             <label>Date</label>
-                            <input type="datetime-local"  name="date"/>
+                            <input type="datetime-local"  name="date" min="{{ date('Y-m-d') }}"/>
                         </div>            
             <div class="form-group">
                 <button type="submit">Create</button> 

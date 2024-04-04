@@ -25,7 +25,7 @@ class UpdateRequest extends FormRequest
             'name' => 'required',
             'infomation' => 'required',
             'quantity' => 'required|numeric',
-            'date' => 'required',
+            'date' => 'required|after:today',
 
         ];
     }
@@ -38,6 +38,7 @@ class UpdateRequest extends FormRequest
             'quantity.numeric' => 'quantity must be numeric',
             'quantity.required' => 'please enter member quantity',
             'date.required' => 'Please choose date',
+            'date.after:today' => 'Dates in the past cannot be selected',
         ];
     }
 }

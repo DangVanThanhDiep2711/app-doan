@@ -50,7 +50,7 @@
                     </div>
                     <div class="form-group">
                         <label>Date</label>
-                        <input type="datetime-local" class="form-control" name="date"/>
+                        <input type="datetime-local" class="form-control" name="date" min="{{ date('Y-m-d') }}"/>
                     </div>            
                 </div>
         <div class="card-footer">

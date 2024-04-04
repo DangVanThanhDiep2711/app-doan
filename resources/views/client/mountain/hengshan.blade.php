@@ -2,7 +2,7 @@
 @section('title' ,'Héngshān')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Héngshān</div>
 </div>
 <div class="introducing">
@@ -14,7 +14,7 @@
 <h3 class="mountaintitle">In Five Music Famous Mountains</h3>
     <p>The appearance of these five famous mountains is also very diverse and does not overlap or overlap. Thai Son is like sitting (sitting), Hanh Son is like phi (flying), Tung Son is like crouching (lying), Hang Son is like practicing (walking), Hoa Son is like lap (standing).</p>
 </div>
-
+@include('client.home.createtour')
 
 </div>
 @endsection

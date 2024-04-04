@@ -10,7 +10,7 @@
 
     <div class="package-content"> 
         @foreach ($mountains as $mountain)
-         @if ($mountain->country->name == "Việt Nam")
+         @if ($mountain->country->name == "vietnam")
         <div class="box">
             <div class="image">
                 <a href="{{route('client.mountain.'.$mountain->name )}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt=""> 
@@ -28,7 +28,7 @@
                     <li><h4>{{$mountain->name}} Mountain </h4></li>
                 <ul class="pac-details">
                     <li>Height {{$mountain->height}}m</li>
-                    <li><p>{{$mountain->content}}</p></li>
+                    <li><p>{{Str::words($mountain->content,15)}} <a href="{{route('client.mountain.'.$mountain->name )}}">Read More</a>
                 </ul>
                 </div>
             </div>

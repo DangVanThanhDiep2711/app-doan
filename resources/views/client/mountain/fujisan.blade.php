@@ -4,6 +4,7 @@
 <div class="image-container">
     <img src="{{asset('uploads/1712193604-fujisan.jpg')}}" class="img1">
     <div class="overlay">Fuji Mountain</div>
+
 </div>
 <div class="introducing">
 <h2>Conquer Fuji Mountain</h2>
@@ -25,6 +26,7 @@
 </div>
 
 @include('client.home.createtour')
+
 </div>
 
 

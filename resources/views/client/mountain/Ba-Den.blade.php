@@ -2,7 +2,7 @@
 @section('title' ,'Bà Đen')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Bà Đen</div>
 </div>
 <div class="introducing">
@@ -28,6 +28,7 @@ A species of gecko, Gekko badenii (Ba Den mountain gecko), was named after the m
 <p>There are two routes for tourists to climb to the top of Ba Den mountain: the trail behind Ba Pagoda. This road is said to be quite steep and short but contains many dangers such as falling rocks, slippery slopes and poisonous snakes. Along the way there are 4 food and food supply stations. Two other trails start from the Martyrs' monument and follow the electric poles to the top of the mountain. This road is easy to follow, but is quite long, sunny and has no aid station. <br> <br>
 
 However, on May 14, 2021, Mr. Pham Van Hai, Deputy Head of the Management Board of Ba Den Mountain National Tourist Area, under the People's Committee of Tay Ninh Province, announced a request to temporarily stop conquering the peak of Ba Den Mountain. By road such as the road from Ba Pagoda to the top, electric pole road and trail in Ma Thien Lanh area. The reason given by the Management Board is due to the impact of the rainy and stormy season, causing erosion, landslides, dangerous for backpackers and at the same time, investors are building a road project to the top of Ba Den mountain.</p>
+@include('client.home.createtour')
 </div>
 
 

@@ -2,7 +2,7 @@
 @section('title' ,'Hán shān')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Hán shān</div>
 </div>
 <div class="introducing">
@@ -38,6 +38,6 @@ Besides the temples, the mountain also has 9 ponds, 9 wells, 9 lakes, 10 caves, 
 
 <h3 class="mountaintitle">Han Shan Mountain and stamps</h3>
 <p>The mountain was honored by the Beijing National Postal Service to issue a set of stamps in 1990, including 4 engravings depicting the beauty of mountain landscapes.</p>
-
+@include('client.home.createtour')
 </div>
 @endsection

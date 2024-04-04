@@ -41,11 +41,11 @@
             @endforeach
             <thead class="head1">
                 <tr>
-                    <th>ID</th>
-                    <th>TourName</th>
-                    <th>MemberName</th>
-                    <th>Status</th>   
-                    <th>Chose</th>    
+                    <th scope="col">ID</th>
+                    <th scope="col">Mountain</th>
+                    <th scope="col">MemberName</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Chose</th>
                 </tr>
             </thead>
         </table>

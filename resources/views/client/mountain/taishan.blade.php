@@ -2,7 +2,7 @@
 @section('title' ,'Tai Shan')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Tai Shan</div>
 </div>
 <div class="introducing">
@@ -27,7 +27,7 @@
     Some other prominent examples include Xa Than cliff (舍身崖), Ai Than cliff (爱身崖), Nhat Quan peak (日观峰), Nguyet Quan peak, Chiem Lo Dai (瞻鲁台), Tham Hai peak jelly (探海石)</p>
 
 
-
+    @include('client.home.createtour')
 </div>
 
 

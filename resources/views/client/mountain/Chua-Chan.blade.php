@@ -2,7 +2,7 @@
 @section('title' ,'Chứa Chan')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua-chan.png')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Chứa Chan</div>
 </div>
 <div class="introducing">
@@ -18,7 +18,7 @@
 
 
 
-
+@include('client.home.createtour')
 </div>
 
 

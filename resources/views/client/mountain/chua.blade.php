@@ -2,7 +2,7 @@
 @section('title' ,'Chúa')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Chúa</div>
 </div>
 <div class="introducing">
@@ -35,7 +35,7 @@ The Nui Chua area has three sides facing the sea. Immediately to the north is th
 
 
 
-
+@include('client.home.createtour')
 </div>
 
 

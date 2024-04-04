@@ -44,17 +44,3 @@
 </section>
 
 @endsection
-<script>
-    function showMore() {
-        var moreText = document.querySelector('.more');
-        var btnText = document.querySelector('button');
-
-        if (moreText.style.display === 'none') {
-            moreText.style.display = 'inline';
-            btnText.innerHTML = 'Read less';
-        } else {
-            moreText.style.display = 'none';
-            btnText.innerHTML = 'Read more';
-        }
-    }
-</script> 

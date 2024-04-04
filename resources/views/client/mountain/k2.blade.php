@@ -2,7 +2,7 @@
 @section('title' ,'K2')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain K2</div>
 </div>
 <div class="introducing">
@@ -29,6 +29,6 @@
     K2 is ranked 22nd for elevation gain relative to its surroundings, as it is part of the surrounding plateau (which includes the Karakoram range, the Tibetan plateau, and the Himalayas), and there is a trail leading from K2 to Everest which is always above 4,594 meters at Mustang Lo.</p>
 
 
-
+    @include('client.home.createtour')
 </div>
 @endsection

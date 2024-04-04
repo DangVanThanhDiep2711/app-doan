@@ -2,7 +2,7 @@
 @section('title' ,'Asahi')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('uploads/1712191729-asahi.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Asahi</div>
 </div>
 <div class="introducing">

@@ -2,7 +2,7 @@
 @section('title' ,'Norikura')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('uploads/1712193200-Norikura.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Norikura</div>
 </div>
 <div class="introducing">

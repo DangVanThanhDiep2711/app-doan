@@ -2,7 +2,7 @@
 @section('title' ,'Langbiang')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Langbiang</div>
 </div>
 <div class="introducing">
@@ -37,7 +37,7 @@
     In addition, the management board of Bidoup Nui Ba National Park (near Zoo Doo) also provides tour guide services to guide and explain the biodiversity of the national park (for a fee, if you want a guide). You can call to register in advance).</p>
     
 
-
+    @include('client.home.createtour')
 </div>
 
 

@@ -2,7 +2,7 @@
 @section('title' ,'Nanga Parbat')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-ba-den.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Nanga Parbat</div>
 </div>
 <div class="introducing">
@@ -29,6 +29,7 @@
 <h3 class="mountaintitle">Climbing challenge at Nanga Parbat</h3>
     <p>There are several routes to climb Nanga Parbat, of which Diamir Face is the most popular. Diamir Face is known for its steepness and difficulty, and requires climbers to traverse treacherous ice and negotiate narrow crevices. <br>
     Other routes include the Rupal Face, which is the highest face of the mountain, and the Kinshofer Route, known for its steep ice walls and challenging rock formations.</p>
+    @include('client.home.createtour')
 </div>
 
 

@@ -59,7 +59,7 @@ class TripRegistration extends Mailable
                     ->view('emails.trip_registration')
                     ->with([
                         'user' => $this->user,
-                        'trip' => $this->join,
+                        'join' => $this->join,
                     ]);
     }
 }

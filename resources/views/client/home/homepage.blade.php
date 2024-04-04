@@ -6,46 +6,46 @@
         <h2>Countries</h2>
     </div>
     <div class="location-content">    
-        <a href="{{route('client.country.vietnam')}}" target="_blank">
+        <a href="{{route('client.country.vietnam')}}" >
             <div class="col-content">
                 <img src="{{asset('blog/files/l1.jpg')}}" alt="">
                     <h5>Vietnam</h5>
             </div>
         </a>
-        <a href="{{route('client.country.china')}}" target="_blank">
+        <a href="{{route('client.country.china')}}" >
             <div class="col-content">
                 <img src="{{asset('blog/files/l2.jpg')}}" alt="">
                     <h5>China</h5>
             </div>
         </a>
 
-        <a href="{{route('client.country.japan')}}" target="_blank">
+        <a href="{{route('client.country.japan')}}" >
             <div class="col-content">
                 <img src="{{asset('blog/files/l3.jpg')}}" alt="">
                     <h5>Japan</h5>
             </div>
         </a>
-        <a href="{{route('client.country.pakistan')}}" target="_blank">
+        <a href="{{route('client.country.pakistan')}}" >
             <div class="col-content">
                 <img src="{{asset('blog/files/l5.jpg')}}" alt="">
                     <h5>Pakistan</h5>
             </div>
         </a>
 
-        <a href="{{route('client.country.india')}}" target="_blank">
+        <a href="{{route('client.country.india')}}" >
             <div class="col-content">
                 <img src="{{asset('blog/files/l6.jpg')}}" alt="">
                     <h5>India</h5>
             </div>
             </a>
 {{-- 
-        <a href="./locations.html#port-blair" target="_blank"><div class="col-content">
+        <a href="./locations.html#port-blair" ><div class="col-content">
             <img src="{{asset('blog/files/l7.jpg')}}" alt="">
             <h5>Andaman & Nicobar</h5>
             <p>Port Blair</p>
         </div></a>
 
-        <a href="./locations.html#rome" target="_blank"><div class="col-content">
+        <a href="./locations.html#rome" ><div class="col-content">
             <img src="{{asset('blog/files/l8.jpg')}}" alt="">
             <h5>Italy</h5>
             <p>Rome</p>

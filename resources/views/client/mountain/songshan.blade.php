@@ -2,7 +2,7 @@
 @section('title' ,'Dōngshān')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Dōngshān</div>
 </div>
 <div class="introducing">
@@ -16,6 +16,6 @@
     
     The peak of the mountain is Tuan Cuc peak, 1,491.7 m [1] above sea level. The nearby Shaolin Temple is the birthplace of Zen Buddhism, and its collection of stupas containing remains is considered the largest in China today. Zhongye Temple was built during the Qin Dynasty and is one of the most ancient architectural works in China.</p>
 </div>
-
+@include('client.home.createtour')
 </div>
 @endsection

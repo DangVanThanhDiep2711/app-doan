@@ -14,7 +14,7 @@
             <tr>
                 <th>ID</th>
                 <th>Mountain</th>
-                <th>Name Tour</th>
+                
                 <th>Infomation</th>
                 <th>Quantity</th>
                 <th>Status</th>         
@@ -26,7 +26,7 @@
                 @if ($memberjoin->status==2)
                 <td>{{$loop->iteration}}</td>
                 <td>{{$memberjoin->join->mountain->name}}</td>
-                <td>{{$memberjoin->join->name}}</td>
+                
                 <td>{{$memberjoin->join->infomation}}</td>
                 <td>{{$memberjoin->join->quantity}}</td> 
                 @if ($memberjoin->status == 1)
@@ -46,7 +46,7 @@
             <tr>
                 <th>ID</th>
                 <th>Mountain</th>
-                <th>Name Tour</th>
+               
                 <th>Infomation</th>
                 <th>Quantity</th>
                 <th>Status</th>         

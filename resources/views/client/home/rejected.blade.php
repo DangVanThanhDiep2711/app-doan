@@ -46,12 +46,13 @@
         @endforeach
         <thead class="head1">
             <tr>
-                <th>ID</th>
-                <th>Mountain</th>
-                <th>Name</th>
-                <th>Infomation</th>
-                <th>Quantity</th>
-                <th>Status</th>         
+                <tr>
+                    <th>ID</th>
+                    <th>Mountain</th>
+                    <th>Infomation</th>
+                    <th>Quantity</th>
+                    <th>Status</th>         
+                </tr>       
             </tr>
         </thead>
     </form>

@@ -45,14 +45,13 @@
                         </div>
                         <div class="form-group">
                             <label>Date</label>
-<<<<<<< HEAD
-                            <input type="datetime-local"  name="date"/>
-                        </div>     
-                                       
-=======
                             <input type="datetime-local"  name="date" min="{{ date('Y-m-d') }}"/>
-                        </div>            
->>>>>>> 649ed6c5bda265f473e1a9544db8d15fc63c9d92
+                        </div>   
+                        <button class="g-recaptcha" 
+                    data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>         
+
             <div class="form-group">
                 <button type="submit">Create</button> 
             </div>
@@ -62,5 +61,13 @@
 </div>   
 </section>
 @endif
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+function onSubmit(token) {
+    document.getElementById("your-form-id").submit();
+}
+</script>
+
 
 

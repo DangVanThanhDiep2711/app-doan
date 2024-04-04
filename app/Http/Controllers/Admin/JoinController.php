@@ -9,8 +9,10 @@ use App\Models\Mountain;
 use App\Mail\TourRegisteredMail;
 use Illuminate\Support\Facades\Mail;
 use App\Models\User;
+use GuzzleHttp\Client;
 use App\Http\Requests\Admin\Join\StoreRequest;
 use App\Http\Requests\Admin\Join\UpdateRequest;
+use App\Models\MemberJoin;
 
 class JoinController extends Controller
 
@@ -119,4 +121,42 @@ class JoinController extends Controller
 
         return redirect()->route('admin.join.index')->with('success','Delete tour successfully');
     }
+
+
+    public function submitForm(Request $request)
+{
+    $user = new User();
+    $response = $user->post('https://www.google.com/recaptcha/api/siteverify', [
+        'form_params' => [
+            'secret' => env('RECAPTCHA_SECRET_KEY'),
+            'response' => $request->input('g-recaptcha-response'),
+            'remoteip' => $request->ip()
+        ]
+    ]);
+
+    $body = json_decode((string) $response->getBody());
+    if ($body->success) {
+        // Captcha validation passed
+        // Xử lý logic form ở đây
+        $join_id = $request->input('join_id');
+        $userId = auth()->user()->id;
+
+        $join = Join::find($join_id);
+        $user = User::find($userId);
+
+        $memberjoin = new MemberJoin();
+        $memberjoin->join_id = $join_id;
+        $memberjoin->user_id = $userId;
+        $memberjoin->save();
+
+        Mail::to($user->email)->send(new TourRegisteredMail($user, $join));
+        Mail::to($join->user->email)->send(new TourRegisteredMail($user, $join));
+
+        return redirect()->back()->with('success', 'Đăng ký tour thành công và email đã được gửi.');
+    } else {
+        // Captcha validation failed
+        // Xử lý lỗi ở đây
+        return redirect()->back()->withErrors(['captcha' => 'Captcha không hợp lệ. Vui lòng thử lại.']);
+    }
+}
 }

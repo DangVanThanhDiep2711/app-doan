@@ -2,7 +2,7 @@
 @section('title' ,'Rao Co')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/raoco.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Rao Co Mountain</div>
 </div>
 <div class="introducing">

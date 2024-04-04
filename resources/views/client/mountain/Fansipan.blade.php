@@ -2,7 +2,7 @@
 @section('title' ,'Fansipan')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/fansipan.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Fansipan Mountain</div>
 </div>
 <div class="introducing">

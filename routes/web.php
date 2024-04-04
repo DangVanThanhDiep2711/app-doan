@@ -75,11 +75,15 @@ Route::prefix('client')->name('client.')->group(function () {
         Route::get('Phu-Luong', 'phuluong')->name('Phu-Luong');
         Route::get('Rao-Co', 'raoco')->name('Rao-Co');
         //China
-        Route::get('taishan', 'taishan')->name('Taishan');
-        Route::get('huashan', 'huashan')->name('Huashan');
-        Route::get('hanshan', 'hanshan')->name('Hanshan');
-        Route::get('hangshan', 'hangshan')->name('Hangshan');
-        Route::get('dongshan', 'dongshan')->name('Dongshan');
+        Route::get('Taishan', 'taishan')->name('Taishan');
+        Route::get('Huashan', 'huashan')->name('Huashan');
+        Route::get('Hengshan', 'hengshan')->name('Hengshan');
+        Route::get('Hanshan', 'hanshan')->name('Hanshan');
+        Route::get('Songshan', 'songshan')->name('Songshan');
+        Route::get('Wudang', 'wudang')->name('Wudang');
+        Route::get('Qingcheng', 'qingcheng')->name('Qingcheng');
+        Route::get('Laojun', 'laojun')->name('Laojun');
+
         //Japan
         Route::get('asahi', 'asahi')->name('Asahi');
         Route::get('zao', 'zao')->name('Zao');

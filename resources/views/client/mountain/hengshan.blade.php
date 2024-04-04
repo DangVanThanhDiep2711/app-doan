@@ -2,7 +2,7 @@
 @section('title' ,'Héngshān')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/nui-chua.jpeg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Mountain Héngshān</div>
 </div>
 <div class="introducing">

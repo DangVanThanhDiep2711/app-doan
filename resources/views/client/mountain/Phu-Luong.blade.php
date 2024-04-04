@@ -2,7 +2,7 @@
 @section('title' ,'Phu Luong')
 @section('content')
 <div class="image-container">
-    <img src="{{asset('blog/files/phuluong.jpg')}}" class="img1">
+    <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
     <div class="overlay">Phu Luông Mountain</div>
 </div>
 <div class="introducing">

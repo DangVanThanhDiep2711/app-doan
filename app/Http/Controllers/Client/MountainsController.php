@@ -42,7 +42,7 @@ class MountainsController extends Controller
     public function hanshan(){
         return view("client.mountain.Hanshan");
     }
-    public function hangshan(){
+    public function hengshan(){
         return view("client.mountain.Hengshan");
     }
     public function songshan(){

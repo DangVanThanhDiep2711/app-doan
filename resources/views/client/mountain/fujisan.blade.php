@@ -1,16 +1,18 @@
 @extends('client.master')
 @section('title' ,'Asahi')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Fujisan")
 <div class="image-container">
     <img src="{{asset('uploads/1712193604-fujisan.jpg')}}" class="img1">
-    <div class="overlay">Fuji Mountain</div>
+    <div class="overlay">{{$mountain->name}}</div>
 
 </div>
 <div class="introducing">
-<h2>Conquer Fuji Mountain</h2>
-<p>Mount Fuji is one of Japan's "Three Sacred Mountains" (三霊山, San reizan, "three sacred mountains") along with Mount Haku and Mount Tate. Mount Fuji is a special scenic spot and historical site of Japan. The mountain was added to the UNESCO World Heritage list on June 22, 2013 for its cultural value. According to UNESCO, it has inspired artists and poets and has been a pilgrimage destination for centuries past and present. This heritage includes 25 sites located in the Mount Fuji area including the sacred mountain area, Fujisan Hongū Sengen Taisha Shinto shrine.
+<h2>Conquer {{$mountain->name}}</h2>
+<p>{{$mountain->content}}
 </p>
-
 <h3 class="mountaintitle">Geological</h3>
 <p>Mount Fuji is an active volcano and a very special feature of Japanese geography. It is 3,776.24 meters high and is located near the Pacific coast of central Honshu, just southwest of Tokyo. It passes through the boundary of Shizuoka and Yamanashi prefectures. Four small cities surround it: Gotemba to the east, Fujiyoshida to the north, Fujinomiya to the southwest, and Fuji to the south. It is also surrounded by five lakes: Lake Kawaguchi, Lake Yamanaka, Lake Sai, Lake Motosu, and Lake Shōji. Along with nearby Lake Ashi, they create a beautiful landscape for this mountain. This mountain is part of Fuji-Hakone-Izu National Park. When standing on the mountain, we can see the Yokohama area, Tokyo, and sometimes as far as Chiba, Saitama, Tochigi, Ibaraki and Lake Hamana when the weather is clear. Especially in winter, it can be seen from the Shinkansen train arriving at Utsunomiya station. It has also been captured from space in a space shuttle.</p>
 <div><img class="img6" src="{{asset('uploads/1712193604-fujisan.jpg')}}" alt="fujisan"></div>

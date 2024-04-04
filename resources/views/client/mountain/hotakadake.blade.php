@@ -1,14 +1,17 @@
 @extends('client.master')
 @section('title' ,'Asahi')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Hotakadake")
 <div class="image-container">
     <img src="{{asset('uploads/1712195887-hotakadake.jpg')}}" class="img1">
-    <div class="overlay">Hotakadake Mountain</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer hotakadake Mountain</h2>
-<p>The Hotaka Dake is an igneous massive in the North Alps of Japan (Kita Alps) that contains the third tallest peak in the country and the tallest in the North Alps, as distinguished from the South Alps (Minami Alps). Collectively, they are called the Japan Alps. While the South Alps contain sedimentary rock, the North Alps are predominantly igneous, with both volcanic and plutonic rock types.
-    
+<h2>Conquer {{$mountain->name}} Mountain</h2>
+<p>{{$mountain->content}}
+
 </p>
 
 <h3 class="mountaintitle">Geological</h3>
@@ -35,7 +38,10 @@ The peaks of Okuhotaka, Karasawa, Kitahotaka, Maehotaka and Nishihotaka are call
 <li><p>To the north, beyond a steep descent and ascent at the Daikiretto, the ridge continues across Mount Minami (南岳, Minami-dake), Mount Ōbami (大喰岳, Ōbami-dake), ending at Mount Yari. In the south, a ridge stretches from Mount Okuhotaka via Mount Nishihotaka to Mount Yake. The Tsuri Ridge runs from Mount Okuhotaka to Mount Maehotaka, from where a path leads down through a cirque to the bridge Kappabashi in Kamikōchi. Climbing down on the Gifu side, either from the Hotaka Mountain Cottage (穂高岳山荘, Hotakadake Sansō) through Shiradezawa (白出沢, shiradezawa) or taking the Shinhotaka Ropeway from next to Nishihotaka-dake, the road and Shinhodaka Onsen (新穂高温泉, Shinhodaka-onsen) can be reached in the valley below.</p></li>
 </ul>
 </div>
-@include('client.home.createtour')
+@include('client.home.createtour',['id' => $mountain->id])
+@endif
+@endif
+@endforeach
 </div>
 
 

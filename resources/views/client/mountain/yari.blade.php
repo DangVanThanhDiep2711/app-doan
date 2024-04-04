@@ -1,13 +1,16 @@
 @extends('client.master')
 @section('title' ,'Asahi')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Yari")
 <div class="image-container">
     <img src="{{asset('uploads/1712196694-yari.jpg')}}" class="img1">
-    <div class="overlay">Yari Mountain</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h3 class="mountaintitle">Conquer Yari Mountain</h3>
-<p>Mount Yari is located in the Chūbu-Sangaku National Park.[5] The name derives from its shape, which resembles a spear (槍 yari) thrust into the sky. Because of its shape, it is also called the Matterhorn of Japan. Ridges and valleys reach out from this pyramid-shaped mountain in all directions. The four ridges are Higashikama (東鎌), Yarihotaka (槍穂高), Nishikama (西鎌) and Kitakama (北鎌) to the east, south, west and north, respectively. The four valleys are Yarizawa (槍沢), Hidazawa or Yaridaira (飛騨沢 or 槍平), Senjōzawa (千丈沢) and Tenjōzawa (天丈沢) to the southeast, southwest, northwest and northeast, respectively.  
+<h3 class="mountaintitle">Conquer {{$mountain->name}} Mountain</h3>
+<p>{{$mountain->content}}  
 </p>
 
 <h3 class="mountaintitle">Geological</h3>
@@ -31,6 +34,9 @@
 <li><p>Kamikōchi (上高地) ― Myōjinike (明神池) ― Tokusawa (徳沢) ― Yokoo (横尾) ― Yarisawa lodge ― Yari-ga-take</p></li>
 </ul>
 </div>
-@include('client.home.createtour')
+@include('client.home.createtour',['id' => $mountain->id])
+@endif
+@endif
+@endforeach
 </div>
 @endsection

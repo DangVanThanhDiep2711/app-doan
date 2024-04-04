@@ -1,3 +1,8 @@
+
+
+
+
+
 @if (Auth::check())
 <section class="container">
     @if ($errors->any())
@@ -34,8 +39,13 @@
                             <label>Mountain</label>
                             <select  name="mountain_id">
                               <option value="0" {{old('mountain_id')==0?'selected' : ''}}>----- Root -----</option>
-                              @foreach ($mountains as $mountain)                                              
+                              @foreach ($mountains as $mountain) 
+                              @if(isset($id))
+                                  
+                                    <option value="{{$mountain->id}}" {{old('mountain_id',$mountain->id)==$?'selected' : ''}}>{{$mountain->name}}</option>
+                                @else                                          
                               <option value="{{$mountain->id}}" {{old('mountain_id',$mountain->id)==$mountain->id?'selected' : ''}}>{{$mountain->name}}</option>
+                              @endif
                               @endforeach  
                             </select>
                         </div>
@@ -47,13 +57,19 @@
                             <label>Date</label>
                             <input type="datetime-local"  name="date" min="{{ date('Y-m-d') }}"/>
                         </div>   
-                        <button class="g-recaptcha" 
-                    data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}" 
-                    data-callback='onSubmit' 
-                    data-action='submit'>Submit</button>         
+                        <div class="captcha">           
+                        <label for="captcha-input">Enter Captcha</label>
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text" id="captcha-form" placeholder="Enter captcha text" class="captcha-input">
+                            <button class="captcha-refresh">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </div>
+                    </div> 
 
             <div class="form-group">
-                <button type="submit">Create</button> 
+                <button type="submit" id="login-btn">Create</button> 
             </div>
         </div>
         <!-- /.card -->
@@ -62,12 +78,45 @@
 </section>
 @endif
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-function onSubmit(token) {
-    document.getElementById("your-form-id").submit();
-}
-</script>
+<Script>
+    (function(){
+        const fonts =["cursive","sans-serif","serif","monospace"];
+        let captchavalue ="";
+        function generateCaptcha (){
+        let value = btoa(Math.random()*1000000000);
+        value =value.substr(0,5+Math.random()*5);
+        captchavalue = value;
+        }
+    function setCaptcha(    ){
+       let html= captchavalue.split("").map((char)=>{
+            const rotate =-20 + Math.trunc(Math.random()*30);
+            const font = Math.trunc(Math.random()*fonts.length);
+            return `<span
+                style="
+                transform:rotate(${rotate}deg);
+                font-family:${fonts[font]}
+                ">${char}
+                    </span>`;
+        }).join("");
+        document.querySelector(".form-group .captcha .preview").innerHTML=html;
+    }
+    function initCaptcha(){
+        document.querySelector(".form-group .captcha .captcha-refresh").addEventListener("click",function(){
+            generateCaptcha ();
+            setCaptcha();
+        });
+        generateCaptcha ();
+            setCaptcha();
+    }
+    initCaptcha();
+    document.querySelector("#login-btn").addEventListener("click",function(){
+        let inputCaptchaValue = document.querySelector(".captcha-input").value;
+        if(inputCaptchaValue === captchavalue){
+            arlert("","Logging In!","success");
+        }else{
+            arlert("Invalid captcha");
+        }
+    });
 
-
-
+})();
+</Script>

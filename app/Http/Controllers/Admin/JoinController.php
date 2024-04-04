@@ -52,9 +52,6 @@ class JoinController extends Controller
         $join->mountain_id = $request->mountain_id;
         $join->quantity=$request->quantity;
         $join->date = $request->date;
-        $request->validate([
-            'g-recaptcha-response' => 'required|captcha',
-        ]);
         $join->save();
         return redirect()->route('client.home')->with('success','Create country successfully');
         

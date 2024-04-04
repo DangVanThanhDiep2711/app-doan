@@ -1,13 +1,16 @@
 @extends('client.master')
 @section('title' ,'Norikura')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Norikura")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Mountain Norikura</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Norikura Mountain</h2>
-<p>Mount Norikura (乗鞍岳 Norikura-dake?) is a potentially active volcano located on the border of Gifu and Nagano prefectures in Japan. This is part of the Hida mountain range, which is listed in the list of 100 famous mountains in Japan.</p>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
+<p>{{$mountain->content}}</p>
 
 <div><img class="img6" src="{{asset('uploads/1712193200-Norikura.jpg')}}" alt="núi Norikura"></div>
 
@@ -27,7 +30,7 @@
     If you're leaving from Nagano, take the same JR Shinano Limited Express line bound for Nagoya. There is a convenient bus service from Takayama in neighboring Gifu Prefecture.
     <br><br>
     From Matsumoto, take a train to Shin-Shimashima, then transfer to a bus to the Kanko Center Mae bus stop in the plateau. For other areas in rural Nagano, driving a rental car will give you more freedom to explore.</p>
-    @include('client.home.createtour')
+    @include('client.home.createtour',['id' => $mountain->id])
 </div>
 
 

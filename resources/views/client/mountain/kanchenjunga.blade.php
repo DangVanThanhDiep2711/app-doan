@@ -1,15 +1,16 @@
 @extends('client.master')
 @section('title' ,'Kangchenjunga')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "India")
+@if ($mountain->name=="Kabru")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Mountain Kangchenjunga</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Kangchenjunga Mountain</h2>
-<p>Kangchenjunga (Nepali: कञ्चनजङ्घा Kanchanjaŋghā), (Limbu: Sewalungma (सेवालुन्ग्मा)), or Canchengjiangjia (干城章嘉) is the third highest mountain in the world (after Mount Everest and K2), with an altitude of 8,586 meters (28,169 feet). Kangchenjunga translates to "Five Treasures of Snow", as it has five peaks, four of which are over 8,450 meters high. The treasures represent the five treasuries of God, which are gold, silver, precious stones, grains, and holy books. Kangchenjunga is called Sewalungma in the local Limbu language, which translates as 'the mountain to which we send our greetings'. Kanchenjunga or Sewalungma is considered sacred in the Kirant religion. <br><br>
-
-Three of the five peaks (main, central and southern) are located on the border of Sikkim district, India and Taplejung district of Nepal, while the other two peaks lie entirely within Taplejung district. On the Nepal side, there is the Kangchenjunga conservation project run by the World Wildlife Fund, together with the Government of Nepal. This conservation area has red pandas and other alpine animals, birds and plants. Kangchenjunga on the Indian side also has a protected national park area called Khangchendzonga National Park.</p>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
+<p>{{$mountain->content}}</p>
 <div><img class="img6" src="{{asset('blog/files/dinh-nui-Kangchenjunga.jpg')}}" alt="Kangchenjunga"></div>
 <h3 class="mountaintitle">Challenge climbers</h3>
 <p>Climbing Kangchenjunga mountain requires good health and experience, as it has the height and difficulty of a high mountain. Those who want to climb this mountain need to have a good plan and a good team to deal with weather, geography and health issues.</p>
@@ -22,7 +23,10 @@ Three of the five peaks (main, central and southern) are located on the border o
 
 
 
-    @include('client.home.createtour')
+    @include('client.home.createtour',['id' => $mountain->id])
+    @endif
+@endif
+@endforeach
 </div>
 
 

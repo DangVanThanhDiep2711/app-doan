@@ -17,7 +17,7 @@
             <div class="box">
                 <div class="image">
                     <a href="{{route('client.mountain.'.$mountain->name )}}"><img src="{{asset('uploads/')}}/{{$mountain->image}}" alt=""> 
-                    <h3> {{$mountain->name}} Mountain </h3>
+                    <h3> {{$mountain->name}}</h3>
                 </div>
                 <div class="stars">
                     <a href="#"><i class='bx bxs-star'></i></a>

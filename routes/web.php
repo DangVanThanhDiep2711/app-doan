@@ -27,7 +27,9 @@ use App\Http\Controllers\Client\MountainsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/client/home/dangky', function () {
+    return view('client/home/dangky');
+});
 Route::get('/', function () {
     return view('client/home/homepage');
 });

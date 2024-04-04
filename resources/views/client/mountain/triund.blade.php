@@ -1,14 +1,17 @@
 @extends('client.master')
 @section('title' ,'Triund')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Triund")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Triund Mountain</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Triund Mountain</h2>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
 <p>
-    Get away from city life for a while and indulge in the bliss of Triund Hill Station. Surrounded by lush greenery and the huge and mysterious Dhauladhar mountains from the Himalayas, this is a lovely summer getaway. Right from the extraordinary waterfalls, mountains and other natural delights, this place holds the position of being </p>
+    {{$mountain->content}} </p>
 <div><img class="img6" src="{{asset('blog/files/triund-hill.jpg')}}" alt="núi triund"></div>
 <h3 class="mountaintitle">Main attractions in and around Triund</h3>
 <h4 class="mountaintitlee">1. Bhagsunag Dharamshala Waterfall</h4>
@@ -23,7 +26,10 @@
 <p>
     This temple is located 3 km from Mcleodganj. The temple is highly revered by the Hindu and Gorkha communities. This sacred temple is famous for its two lakes that are said to have healing properties. Therefore, it sees a lot of tourists.
 </p>
-@include('client.home.createtour')
+@include('client.home.createtour',['id' => $mountain->id])
+@endif
+@endif
+@endforeach
 </div>
 
 

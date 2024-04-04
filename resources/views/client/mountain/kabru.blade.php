@@ -1,14 +1,17 @@
 @extends('client.master')
 @section('title' ,'Kabru')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "India")
+@if ($mountain->name=="Kabru")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Kabru Mountain</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Kabru Mountain</h2>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
 <p>
-    Kabru is a mountain in the Himalayas on the eastern border between Nepal and India . Kabru has a ridge extending south to Kangchenjunga and has the world's southernmost 7,000 meter (23,000 ft) peak.</p>
+    {{$mountain->content}}</p>
 <div><img class="img6" src="{{asset('blog/files/Kabru.jpg')}}" alt="núi Kabru"></div>
 <h3 class="mountaintitle">Climbing</h3>
 <p>
@@ -23,7 +26,10 @@
     In 2004, a group of Serbian climbers unsuccessfully attempted to ascend the mountain. A series of avalanches forces the group to abandon their goal.
 </p>
 
-@include('client.home.createtour')
+@include('client.home.createtour',['id' => $mountain->id])
+@endif
+@endif
+@endforeach
 </div>
 
 @endsection

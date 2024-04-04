@@ -320,7 +320,7 @@ nav ul li a{
 }
 
 .image h3{
-    color: white;
+    color: rgb(200, 221, 9);
     position: absolute;
     font-size: 30px;
     font-weight: 600;
@@ -1501,4 +1501,43 @@ th[scope="row"] {
     text-align: center;
     color: red;
     margin-top: 20px;
+}
+.form-group .captcha .label{
+    display: block;
+    font-size: 15px;
+    color: #111;
+    margin-bottom: 5px;
+}
+.form-group .captcha{
+    margin: 15px 0;
+}
+.form-group .captcha .preview{
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    font-family: "monospace"; 
+}
+.form-group .captcha .preview span {
+    display: inline-block;
+    user-select: none;
+}
+.form-group .captcha .captcha-form {
+    display: flex;
+}
+.form-group .captcha .captcha-form input{
+width: 100%;
+padding: 8px;
+border: 1px solid #888;
+}
+.form-group .captcha .captcha-form .captcha-refresh{
+    width: 40px;
+    border: none;
+    outline: none;
+    color: #eee;
+    background: #888;
+    cursor: pointer;
 }

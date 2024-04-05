@@ -1,15 +1,16 @@
 @extends('client.master')
 @section('title' ,'Bà Đen')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "vietnam")
+@if ($mountain->name=="Ba-Den")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Mountain Bà Đen</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Bà Đen Mountain</h2>
-<p>Ba Den Mountain is an extinct volcano located in the center of Tay Ninh province, Vietnam. With an altitude of 986 m, this is the highest mountain   in Southern Vietnam today, known as "The First Heavenly Mountain". <br>
-
-According to Gia Dinh Thanh Thong Chi, the original name of Ba Den Mountain is Ba Dinh. Local elders believe that the original name is Mount Mot. It was not until about half of the 18th century that the name Ba Dinh mountain appeared, then the name gradually became Ba Den mountain. Some people also call it Dien Ba mountain. During the Vietnam War, the area around the mountain was a hot spot as it was where the Ho Chi Minh Trail ended and was a few kilometers west of the Cambodian border. <br>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
+<p>{{$mountain->content}} <br>
 
 This area is actually a cluster of three adjacent mountains, Ba Den Mountain (also known as Ba Mountain), Heo Mountain and Phung Mountain on a total area of ​​24 km². The Ba Den Mountain complex was recognized by the Ministry of Culture (now the Ministry of Culture, Sports and Tourism) as a national historical site and scenic spot on January 21, 1989.</p>
 <h3 class="mountaintitle">Characteristics and geography</h3>
@@ -28,7 +29,11 @@ A species of gecko, Gekko badenii (Ba Den mountain gecko), was named after the m
 <p>There are two routes for tourists to climb to the top of Ba Den mountain: the trail behind Ba Pagoda. This road is said to be quite steep and short but contains many dangers such as falling rocks, slippery slopes and poisonous snakes. Along the way there are 4 food and food supply stations. Two other trails start from the Martyrs' monument and follow the electric poles to the top of the mountain. This road is easy to follow, but is quite long, sunny and has no aid station. <br> <br>
 
 However, on May 14, 2021, Mr. Pham Van Hai, Deputy Head of the Management Board of Ba Den Mountain National Tourist Area, under the People's Committee of Tay Ninh Province, announced a request to temporarily stop conquering the peak of Ba Den Mountain. By road such as the road from Ba Pagoda to the top, electric pole road and trail in Ma Thien Lanh area. The reason given by the Management Board is due to the impact of the rainy and stormy season, causing erosion, landslides, dangerous for backpackers and at the same time, investors are building a road project to the top of Ba Den mountain.</p>
-@include('client.home.createtour')
+@include('client.home.createtour', ['id' => $mountain->id])
+@endif
+@endif
+
+@endforeach
 </div>
 
 

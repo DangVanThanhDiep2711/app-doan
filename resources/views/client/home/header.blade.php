@@ -27,39 +27,37 @@
                 <li><a href="{{route('client.home')}}">Home</a></li>
                 <li><a href="#locaitons">Countries</a>
                     <ul class="sub-menu">
-                        <li><a href="{{route('client.country.vietnam')}}">Vietnam</a></li>
-                        <li><a href="{{route('client.country.china')}}">China</a></li>
-                        <li><a href="{{route('client.country.japan')}}">Japan</a></li>
-                        <li><a href="{{route('client.country.pakistan')}}">Pakistan</a></li>
-                        <li><a href="{{route('client.country.india')}}">India</a></li>
+                        @foreach ($countries as $country )
+                        <li><a href="{{route('client.country.country',['id'=>$country->id])}}">{{ $country->name}}</a></li> 
+                        @endforeach
+                        
+                       
                     </ul>
                 </li>
                 @if (Auth::check())
                 <li><a href="#locations">Tours</a>
                     <ul class="sub-menu">
-                        <li><a href="{{route('client.tour.show')}}">Availabled Tours</a></li>
-                        <li><a href="{{route('client.tour.memberjoin')}}">MemberJoin</a></li>
-                        <li><a href="{{route('client.tour.showvalidate')}}">Validated Tours</a></li>
-                        <li><a href="{{route('client.tour.showrejected')}}">Rejected Tours</a></li>                
+                        <li><a href="#">Availabled Tours</a></li>
+                                    
                     </ul></li>    
                 @endif
-                <li><a href="{{route('client.contactus.show')}}">Contact Us</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Learn</a>
                     <ul class="sub-menu">
                         <li><a href="#package">About us</a></li>
-                        <li><a href="{{route('client.home.howtoknow')}}">How to know</a></li>
+                        <li><a href="#">How to know</a></li>
                     </ul>
                 </li>
                 @if (Auth::check())
                 <li>
                     <a href="#">{{Auth::user()->fullname}}</a>
                     <ul class="sub-menu">
-                        <li><a href="{{route('client.tour.create')}}">Infomation</a></li>
-                        <li><a href="{{route('logout')}}">Sign out</a></li>                
+                        <li><a href="#">Infomation</a></li>
+                        <li><a href="#">Sign out</a></li>                
                     </ul>
                 </li>    
                 @else
-                <li><a href="{{route('client.sign-in.login')}}">Sign in</a></li>                    
+                <li><a href="#">Sign in</a></li>                    
                 @endif               
             </ul>
         </nav>

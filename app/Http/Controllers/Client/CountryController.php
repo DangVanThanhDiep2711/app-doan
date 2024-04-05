@@ -9,45 +9,15 @@ use App\Models\Mountain;
 
 class CountryController extends Controller
 {
-    public function china(){
-        $mountain = Mountain::get();
+    public function country($id){
+        $mountain = Mountain::with('country')->where('country_id', $id)->get();
        
-        return view("client.country.china"
+       dd($mountain);
+        return view("client.country.country"
         ,[
-            'mountains' =>$mountain
-        ]);
-    }
-    public function india(){
-        $mountain = Mountain::get();
-       
-        return view("client.country.india"
-        ,[
-            'mountains' =>$mountain
-        ]);
-    }
-    public function japan(){
-        $mountain = Mountain::get();
-        return view("client.country.japan"
-        ,[
+            
             'mountains' =>$mountain
         ]);
     }
 
-    public function pakistan(){
-        $mountain = Mountain::get();
-       
-        return view("client.country.pakistan"
-        ,[
-            'mountains' =>$mountain
-        ]);
-    }
-
-    public function vietnam(){
-        $mountain = Mountain::get();
-       
-        return view("client.country.vietnam"
-        ,[
-            'mountains' =>$mountain
-        ]);
-    }
 }

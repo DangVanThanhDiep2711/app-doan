@@ -42,12 +42,7 @@ Route::get('client/home/howtoknow', function () {
 Route::get('/',[BlogController::class ,'blog'])->name('client.home');
 Route::prefix('client')->name('client.')->group(function () {
     Route::prefix('country')->name('country.')->controller(CountryController::class)->group(function () {
-        Route::get('china', 'china')->name('china');
-        Route::get('india', 'india')->name('india');
-        Route::get('japan', 'japan')->name('japan');
-        Route::get('pakistan', 'pakistan')->name('pakistan');
-        Route::get('vietnam', 'vietnam')->name('vietnam');
-        Route::get('show', 'show')->name('show');
+        Route::get('country/{id}', 'country')->name('country');
     });
     Route::prefix('sign-in')->name('sign-in.')->controller(SigninController::class)->group(function () {
         Route::get('login', 'showLogin')->name('showLogin');

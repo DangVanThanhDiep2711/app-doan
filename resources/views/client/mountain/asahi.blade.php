@@ -1,17 +1,16 @@
 @extends('client.master')
 @section('title' ,'Asahi')
 @section('content')
+@foreach ($mountains as $mountain)
+@if ($mountain->country->name == "Japan")
+@if ($mountain->name=="Asahi")
 <div class="image-container">
     <img src="{{asset('blog/files/hinhchitietnui.png')}}" class="img1">
-    <div class="overlay">Mountain Asahi</div>
+    <div class="overlay">{{$mountain->name}} Mountain</div>
 </div>
 <div class="introducing">
-<h2>Conquer Asahi Mountain</h2>
-<p>Mount Asahi (旭岳 Asahi-dake?) is a mountain located in the town of Higashikawa, Hokkaido and is the highest mountain on the island of Hokkaido. It is part of the Daisetsuzan volcanic group in the Ishikari Mountains, located north of Daisetsuzan National Park. <br>
-
-The mountain is popular with hikers in the summer and is easily accessible from Asahidake Onsen via the Asahidake Ropeway. In winter, the mountain is open to skiing lovers. <br>
-
-Sugatami Lake, just below the summit, is famous for its reflections of mountain peaks, snow, and steam escaping from volcanic vents.</p>
+<h2>Conquer {{$mountain->name}} Mountain</h2>
+<p>{{$mountain->content}}</p>
 <h3 class="mountaintitle">Geological</h3>
 <p>Mount Asahi is an active stratovolcano, 2,291 meters (7,516 ft) high,[2] arising 3 kilometers (1.9 mi) southwest of the Ohachi-Daira caldera. The Japan Meteorological Agency ranked C volcanic activity. The volcano consists mainly of andesite and dacite, This Holocene volcano has mafic non-alkaline rocks less than 18,000 years old. In addition to the main peak, there is a smaller volcano rising from the southeastern shoulder of the mountain, Mount Ushiro Asahi or Mount Asahi in Back (後旭岳 Ushiro-Asahi-dake?).</p>
 <div><img class="img6" src="{{asset('uploads/1712191729-asahi.jpg')}}" alt="asahi"></div>
@@ -27,6 +26,10 @@ Sugatami Lake, just below the summit, is famous for its reflections of mountain 
     </ul>
 </div>
 <p>Mount Asahi currently exhibits steam activity in the form of fumaroles.</p>
-@include('client.home.createtour')
+@include('client.home.createtour', ['id' => $mountain->id])
+@endif
+@endif
+
+@endforeach
 </div>
 @endsection
